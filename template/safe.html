@@ -1,0 +1,108 @@
+{template 'common/header'}
+
+<ul class="nav nav-tabs">
+    <li><a href="{php echo $this->createWebUrl('lists');}">报名列表</a></li>
+    <li><a href="{php echo $this->createWebUrl('edit');}">添加报名</a></li>
+	<li class="active"><a href="{php echo $this->createWebUrl('safe');}">数据监控</a></li>
+	<li><a href="{php echo $this->createWebUrl('votelog');}">投票日志</a></li>
+	<li class="pull-right"><a href="{php echo $this->createWebUrl('disableip');}" class="btn btn-success">已封IP</a></li>
+</ul>
+<div class="main">
+	{if empty($_GPC['pid'])}
+    <div class="panel panel-info">
+        <div class="panel-heading">筛选</div>
+        <div class="panel-body">
+            <form action="./index.php" method="get" class="form-horizontal" role="form">
+                <input type="hidden" name="c" value="site">
+                <input type="hidden" name="a" value="entry">
+                <input type="hidden" name="m" value="xiaof_toupiao">
+                <input type="hidden" name="do" value="safe">
+				
+                <div class="form-group">
+                    <label class="col-xs-12 col-sm-2 col-md-2 col-lg-1 control-label">活动期数</label>
+                    <div class="col-xs-12 col-sm-8 col-lg-8">
+                        <select name="sid" class="form-control">
+                            <option {if $_GPC['sid'] == ''} selected{/if} value="">不限</option>
+                            {loop $l1111l11l1llll1l11l1lll11l11lll $ll1l1ll1ll111lllll11l111l1l11ll}
+								<option {if $_GPC['sid'] === $ll1l1ll1ll111lllll11l111l1l11ll['id']} selected{/if} value="{$ll1l1ll1ll111lllll11l111l1l11ll['id']}">{$ll1l1ll1ll111lllll11l111l1l11ll['tit']}</option>
+							{/loop}
+                        </select>
+                    </div>  
+                    <div class="col-xs-12 col-sm-2 col-lg-2">
+                        <button class="btn btn-default"><i class="fa fa-search"></i> 搜索</button>
+                    </div>  					
+                </div>
+            </form>
+        </div>
+    </div>
+	{/if}
+    <form action="?{$_SERVER['QUERY_STRING']}" method="post" id="form1">
+        <table class="table table-hover"  style="width:100%;z-index:-10;" cellspacing="0" cellpadding="0">
+            <thead class="navbar-inner">
+            <tr>
+                <th style="width:180px;">昵称</th>
+				<th style="width:100px;">同ip投票<br/>登陆微信</th>
+				<th style="width:160px;">投票ip<br/>地区</th>
+				<th style="width:160px;">最后投票时间</th>
+				<th style="width:90px;">IP状态</th>
+				<th style="width:90px;">票数状态</th>				
+				<th style="min-width:70px;" class="text-right">操作</th>
+            </tr>
+            </thead>
+            <tbody>
+            {loop $l11111l11ll11llll111ll111l1ll11 $l11lll1l1llll11lll1l1l1111l111l}
+            <tr {if $l11lll1l1llll11lll1l1l1111l111l['hide'] == '1'}style="background:#e6e6e6"{/if}>
+                <td>{$l11lll1l1llll11lll1l1l1111l111l['nickname']}</td>
+				<td >
+					<span class="label label-primary" title="同一个ip给选手投票数">{$l11lll1l1llll11lll1l1l1111l111l['counts']}</span>
+					<br>
+					<span class="label label-warning" title="同一个ip给选手投票使用的微信数量">{$l11lll1l1llll11lll1l1l1111l111l['ocount']}</span>				
+				</td>
+				<td title="{$l11lll1l1llll11lll1l1l1111l111l['dz']}">
+				{php echo long2ip($l11lll1l1llll11lll1l1l1111l111l['ip']);}<br>
+				{$l11lll1l1llll11lll1l1l1111l111l['dz']} 
+				</td>
+				<td>{php echo date('Y-m-d H:i:s', $l11lll1l1llll11lll1l1l1111l111l['created_at'])} </td>
+				<td>{if $l11lll1l1llll11lll1l1l1111l111l['hide'] == '1'}<span class="label label-danger">ip黑名单</span>{else}<span class="label label-success">正常</span>{/if}</td>
+				<td>{if $l11lll1l1llll11lll1l1l1111l111l['unum'] != '0'}<span class="label label-danger">已减{$l11lll1l1llll11lll1l1l1111l111l['unnum']}票</span>{else}<span class="label label-success">正常</span>{/if}</td>
+				<td class="text-right" style="overflow:visible;">
+					<div class="btn-group">
+						<div class="btn-group">
+							<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							ip操作<span class="caret"></span>
+							</button>
+							<ul class="dropdown-menu">
+								<li><a href="{php echo $this->createWebUrl('safe', array('hide'=>'n','safeid'=>$l11lll1l1llll11lll1l1l1111l111l['safeid'],'sid'=>$l11lll1l1llll11lll1l1l1111l111l['sid']));}" >ip解除黑名单</a></li>
+								<li><a href="{php echo $this->createWebUrl('safe', array('hide'=>'y','ip'=>$l11lll1l1llll11lll1l1l1111l111l['ip'],'sid'=>$l11lll1l1llll11lll1l1l1111l111l['sid']));}" >ip加入黑名单</a></li>							
+							</ul>
+						</div>
+						<div class="btn-group">
+							<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							票数操作<span class="caret"></span>
+							</button>
+							<ul class="dropdown-menu">	
+								<li><a href="{php echo $this->createWebUrl('safe', array('unum'=>'n','ip'=>$l11lll1l1llll11lll1l1l1111l111l['ip']));}" >恢复IP所有投票</a></li>
+								<li><a href="{php echo $this->createWebUrl('safe', array('unum'=>'y','ip'=>$l11lll1l1llll11lll1l1l1111l111l['ip']));}" >删除IP所有投票</a></li>
+							</ul>
+						</div>	
+						<a href="{php echo $this->createWebUrl('votelog', array('ip'=>$l11lll1l1llll11lll1l1l1111l111l['ip']));}" title="投票记录" class="btn btn-success">投票记录</a>
+					</div>	
+				</td>
+            </tr>
+            {/loop}
+            </tbody>
+        </table>
+
+        {$ll11l1111l1llll1llll1l1l1l111l1}
+    </form>
+</div>
+<script>
+    $('#form1').submit(function(){
+        if($(":checkbox[name='delete[]']:checked").size() > 0){
+            return confirm('删除后不可恢复，您确定删除吗？');
+        }
+        alert('没有选择粉丝');
+        return false;
+    });
+</script>
+{template 'common/footer'}

@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>{$l1lll1l1l11l11lllllll1lll11111l['title']}-{$l111l111ll1l1111l1l1l11111l1lll['uid']}号-{$l111l111ll1l1111l1l1l11111l1lll['name']}</title>
+<meta name="format-detection" content="telephone=no, address=no">
+<meta name="apple-mobile-web-app-capable" content="yes" /> 
+<meta name="apple-touch-fullscreen" content="yes"/>
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<link href="{MODULE_URL}template/mobile/xiaofweui/css/xiaofmoblieui.css" rel="stylesheet">
+<link href="{$_W['siteroot']}app/resource/css/font-awesome.min.css" rel="stylesheet">
+<link href="{MODULE_URL}template/mobile/xiaofweui/css/xiaoftoupiao.css" rel="stylesheet">
+{php echo register_jssdk(false);}
+<script src="{$_W['siteroot']}app/resource/js/require.js"></script>
+<style>
+.order .cur,.group .cur,.bottom-tabbar .cur span,.grid-item .pic-box .vote, .xiaof-input-radio .fa-check{ color:{$l1lll1l1l11l11lllllll1lll11111l['buttoncolor']};}
+.grid-item .pic-box .vote{ border: 1px solid {$l1lll1l1l11l11lllllll1lll11111l['buttoncolor']};}
+.xiaof-button,.xiaof-button-small{ background:{$l1lll1l1l11l11lllllll1lll11111l['buttoncolor']};}
+</style>
+<script type="text/javascript">
+require.config({
+	baseUrl: '{MODULE_URL}template/mobile/xiaofweui/js',
+	//urlArgs: "v={php echo time();}",
+	paths: {
+		'css': '{$_W['siteroot']}web/resource/js/lib/css.min',
+		'jquery': 'jquery-2.2.3.min',
+		'swiper': 'swiper.jquery.min',
+		'imagesloaded': 'imagesloaded.min',
+		'masonry': 'masonry.pkgd.min',
+		'xiaof': 'xiaofmoblieui',
+		'main': 'main'
+	},
+	shim:{
+		'swiper': {
+			exports: 'swiper',
+			deps: ['jquery', 'css!{MODULE_URL}template/mobile/xiaofweui/css/swiper.min.css']
+		},	
+		'imagesloaded': {
+			exports: 'imagesloaded',
+			deps: ['jquery']
+		},	
+		'xiaof': {
+			exports: 'xiaof',
+			deps: ['jquery']
+		}	
+	}
+});
+</script>
+</head>
+<body>
+
+<div class="head">
+    <div class="head-banner">
+		{if is_array($l1lll1l1l11l11lllllll1lll11111l['thumb'])}
+			{if count($l1lll1l1l11l11lllllll1lll11111l['thumb']) <=1}
+				<a href="{php echo trim($l1lll1l1l11l11lllllll1lll11111l['thumblinkarr'][0]);}"><img src="{php echo tomedia(reset($l1lll1l1l11l11lllllll1lll11111l['thumb']))}"></a>
+			{else}
+				<div class="swiper-container">
+				  <div class="swiper-wrapper">
+					{php $llll1llll1ll1llll1l11111l111ll1 = 0;}
+					{loop $l1lll1l1l11l11lllllll1lll11111l['thumb'] $llll11lll1lll1111111lll1ll1l111}
+					<div class="swiper-slide"><a href="{php echo trim($l1lll1l1l11l11lllllll1lll11111l['thumblinkarr'][$llll1llll1ll1llll1l11111l111ll1]);}"><img src="{php echo tomedia($llll11lll1lll1111111lll1ll1l111);}"></a></div>
+					{php $llll1llll1ll1llll1l11111l111ll1++;}
+					{/loop}
+				  </div>
+				</div>				
+				<script> 
+					require(['swiper'], function(Swiper){
+						new Swiper('.swiper-container', {
+							autoplay: 3000
+						})
+					});	
+				</script>				
+			{/if}
+		{else}
+        <img src="{php echo tomedia($l1lll1l1l11l11lllllll1lll11111l['thumb'])}">
+		{/if}
+    </div>
+	
+    <div class="head-count xiaof-box">
+		<span class="xiaof-box-item">
+			票数<br>
+			<span class="good">{$l111l111ll1l1111l1l1l11111l1lll['good']}</span>
+		</span>
+		<span class="xiaof-box-item">
+			转发量<br/>
+			<span class="share">{$l111l111ll1l1111l1l1l11111l1lll['share']}</span>
+		</span>
+		<span class="xiaof-box-item">
+			浏览量<br/>
+			{$l111l111ll1l1111l1l1l11111l1lll['click']}
+		</span>
+    </div>
+	<div class="head-info">
+		<div class="head-box" >
+			<div class="wrapper clearfix">
+				<div class="fn-left">
+					<i class="fa fa-heart head-box-end"></i>
+				</div>
+				<div class="fn-left head-box-describe">
+				{if $l111l111ll1l1111l1l1l11111l1lll['describe']==''}{$l1lll1l1l11l11lllllll1lll11111l['describe']}{else}{$l111l111ll1l1111l1l1l11111l1lll['describe']}{/if}
+				</div>
+			</div>
+		</div>
+		<div class="head-box-hr"></div>
+		<div class="head-box">
+			<div class="wrapper">
+				<i class="fa fa-cubes i-m8"></i>{$l111l111ll1l1111l1l1l11111l1lll['uid']}号-{$l111l111ll1l1111l1l1l11111l1lll['name']}。当前第{$llll11111l111llll1llll111lll11l}名
+			</div>
+		</div>
+		<div class="head-box-hr"></div>
+		<div class="head-box">
+			<div class="wrapper">
+				<i class="fa fa-eye i-m8"></i>距前一名差{$ll11lll11l1l11l11llll11ll1111ll}票，后一名差{$llll1l11ll1111l11l111ll1lll1111}票
+			</div>
+		</div>
+		<div class="head-box-hr"></div>		
+		{if intval($l1lll1l1l11l11lllllll1lll11111l['double']) >= 2}
+		<div class="head-box">
+			<div class="wrapper">
+				<i class="fa fa-clock-o i-m8"></i>{php echo $this->l111l1ll1lll11ll11l11lll1ll11l1($l1lll1l1l11l11lllllll1lll11111l['double']);}倍时间：{php echo date("m-d H:i",strtotime($l1lll1l1l11l11lllllll1lll11111l['doublestart']));}  至  {php echo date("m-d H:i",strtotime($l1lll1l1l11l11lllllll1lll11111l['doubleend']));}
+			</div>
+		</div>	
+		<div class="head-box-hr"></div>
+		{elseif intval($l1lll1l1l11l11lllllll1lll11111l['opendraw']) == 1 && $l111l111ll1l1111l1l1l11111l1lll['double_at'] > time()}
+		<div class="head-box">
+			<div class="wrapper">
+				<i class="fa fa-clock-o i-m8"></i>双倍投票时间至：{php echo date("Y-m-d H:i", $l111l111ll1l1111l1l1l11111l1lll['double_at'])}结束
+			</div>
+		</div>	
+		<div class="head-box-hr"></div>
+		{/if}			
+	</div>	
+</div>	
+
+<div class="wrapper">
+	<div id="show-container" class="swiper-container">
+			{if $l1lll1l1l11l11lllllll1lll11111l['opensound'] >= 1 && !empty($l111l111ll1l1111l1l1l11111l1lll['sound'])}
+			<div class="show-sound">
+				<img class="sound-on" src="{MODULE_URL}template/mobile/xiaofweui/picture/ms.png"/>
+				<img class="sound-off" src="{MODULE_URL}template/mobile/xiaofweui/picture/mp.png"/>
+			</div>
+			{/if}
+		<ul class="show-lists swiper-wrapper">
+			{loop $ll11l11l1111l1ll1llll11111l11ll $ll1l1ll1ll111lllll11l111l1l11ll}
+			<li  class="swiper-slide"><img class="slide-img" src="{php echo tomedia($ll1l1ll1ll111lllll11l111l1l11ll['thumb']);}"/></li>
+			{/loop}
+		</ul>
+		<div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets">
+		</div>			
+	</div>
+	
+	<div class="show-field">
+	{loop $lllllllllll11l11lllll111l1llll1 $l1l1llll11l1l111lll1l11l11l11ll}
+		<p style="">
+			{$l1l1llll11l1l111lll1l11l11l11ll['name']}：{$l1l1llll11l1l111lll1l11l11l11ll['data']}
+		</p>
+		<div class="head-box-hr"></div>
+	{/loop}
+	</div>
+	
+	{if !empty($l111l111ll1l1111l1l1l11111l1lll['detail'])}
+		<div style="margin-top: 8px;">
+			{php echo htmlspecialchars_decode($l111l111ll1l1111l1l1l11111l1lll['detail']);}
+		</div>
+	{/if}
+	
+	{if $l1lll1l1l11l11lllllll1lll11111l['openvoteuser'] == 1}
+		<div class="voteusers clearfix">
+		<span class="voteusers-label">
+			<i class="voteusers-label-like fa fa-weixin" style="font-size:32px;"></i><span class="voteusers-label-text">支持:</span>
+		</span>
+		{loop $l111lllll11ll111ll1ll111lll1lll $llll111l1l11l1l1ll1l111l1lll1ll}
+			<span class="voteusers-list"><img src="{$llll111l1l11l1l1ll1l111l1lll1ll['avatar']}"/></span>
+		{/loop}
+		</div>
+	{/if}
+	
+	<div class="show-button-group">
+		<span class="xiaof-button vote" data-id="{$l111l111ll1l1111l1l1l11111l1lll['id']}">喜欢Ta投一票</span>
+		{if intval($l1lll1l1l11l11lllllll1lll11111l['opendraw']) == 1}
+		<span class="xiaof-button prop">使用加速投票道具</span>
+		{/if}	
+		{if intval($l1lll1l1l11l11lllllll1lll11111l['showshare']) == 1 && $l1lll1l1l11l11lllllll1lll11111l['globalsetting']['openshare'] == 1}
+		<span class="xiaof-button" onclick="shareLayer();">喊亲友来加油投票</span>
+		{/if}	
+		{if intval($l1lll1l1l11l11lllllll1lll11111l['openposter']) == 1}
+		<a class="xiaof-button" href="{php echo tomedia($l111l111ll1l1111l1l1l11111l1lll['poster']);}">宣传海报</a>
+		{/if}	
+		{if empty($l1lll1l1l11l11lllllll1lll11111l['openwapjoin'])}
+		<a class="xiaof-button" href="{php echo $this->ll11ll1l1l11l11ll11llll1l1ll11l('join');}">我也来参加</a>
+		{/if}
+	</div>
+</div>
+
+{template $l1lll1l1l11l11lllllll1lll11111l['template'].'footer'}
+
+</body>
+<script type="text/javascript">
+	function shareLayer(){
+		$("body").append("<div class='share-layer' onclick='$(this).remove();'><img src='{MODULE_URL}template/mobile/xiaofweui/picture/4.png'/></div>");
+	}
+	require(['jquery', 'main', 'swiper', 'xiaof'], function($, xiaoftoupiao){
+		$.get("{php echo $this->ll11ll1l1l11l11ll11llll1l1ll11l('vote','xiaof_toupiao','&id='.$l111l111ll1l1111l1l1l11111l1lll[id].'&type=click')}");
+		xiaoftoupiao.showSwiper(Swiper); 
+		xiaoftoupiao.registerVote($(".good"), Swiper);
+		xiaoftoupiao.showSound("{$l111l111ll1l1111l1l1l11111l1lll['sound']}");
+		
+		var propHtml = ['<div class="xiaof-form-group">',
+			'			<div class="xiaof-input-radio xiaof-box">',
+			'				<div class="xiaof-form-label xiaof-box-item"><label>双倍投票券(半小时) x {$l11llll1lll111l1lll1l1ll1l11lll}</label></div>',
+			'				<div class="xiaof-form-control">',
+			'					<input class="xiaof-form-input propid" type="radio" name="prop" value="3" />',
+			'				</div>',
+			'			</div>	',
+			'		</div>',
+			'		<div class="xiaof-form-group">',
+			'			<div class="xiaof-input-radio xiaof-box">',
+			'				<div class="xiaof-form-label xiaof-box-item"><label>双倍投票券(一小时) x {$ll1111l1ll11ll1l1ll111l11ll1ll1}</label></div>',
+			'				<div class="xiaof-form-control">',
+			'					<input class="xiaof-form-input propid" type="radio" name="prop" value="4" />',
+			'				</div>',
+			'			</div>	',
+			'		</div>	',
+			'		<div class="xiaof-form-group">',
+			'			<div class="xiaof-input-radio xiaof-box">',
+			'				<div class="xiaof-form-label xiaof-box-item"><label>双倍投票券(二小时) x {$l1llllll1lll1llll1ll111111l11l1}</label></div>',
+			'				<div class="xiaof-form-control">',
+			'					<input class="xiaof-form-input propid" type="radio" name="prop" value="5" />',
+			'				</div>',
+			'			</div>	',
+			'		</div>',
+			'		<div class="xiaof-form-group">',
+			'			<div class="xiaof-input-radio xiaof-box">',
+			'				<div class="xiaof-form-label xiaof-box-item"><label>双倍投票券(八小时) x {$ll1ll1ll1l111llllll11lllll1llll}</label></div>',
+			'				<div class="xiaof-form-control">',
+			'					<input class="xiaof-form-input propid" type="radio" name="prop" value="6" />',
+			'				</div>',
+			'			</div>	',
+			'		</div><p style="margin-top: 15px;">选择您想要使用的道具<p/>'].join("");
+		$(".prop").click(function(){
+			$.xiaof.confirm('我的道具', propHtml, function(status, obj){
+				if(status == 'success'){
+					var propid = $(".propid:checked").val();
+					if(propid == null){
+						$.xiaof.alert("提示", "没有选择要使用的道具");
+						return ;
+					}
+					$.get("{php echo $this->ll11ll1l1l11l11ll11llll1l1ll11l('useprop')}",{'type':propid,'pid':{$l111l111ll1l1111l1l1l11111l1lll['id']},'uid':{$l111l111ll1l1111l1l1l11111l1lll['uid']}},function(data){
+						var result = new Function('return' + data)();
+						if (result.errno == 0) {
+							$.xiaof.alert("提示", result.message);
+							setTimeout(function(){
+								location.reload();
+							},2000);
+							return ;
+						}
+						$.xiaof.alert("提示", result.message);	
+					});
+				}
+			});		
+		});
+		$.xiaof.parseForm();
+		
+		wx.ready(function () {
+			wx.onMenuShareAppMessage({
+				title: '{$llll111ll11l11lll1111111ll1111l}',
+				desc: '{php echo trim($l111l111ll1l1111l1l1l11111l1lll['describe'])}',
+				link: '{php echo $this->ll11ll1l1l11l11ll11llll1l1ll11l('show','xiaof_toupiao','&id='.$l111l111ll1l1111l1l1l11111l1lll['id'].'')}',
+				imgUrl: '{php echo tomedia($l111l111ll1l1111l1l1l11111l1lll['pic'])}',
+				success: function(){
+					var This = $(".share");
+					This.html(parseInt(This.html())+1);
+					$.get("{php echo $this->ll11ll1l1l11l11ll11llll1l1ll11l('vote','xiaof_toupiao','&id='.$l111l111ll1l1111l1l1l11111l1lll[id].'&type=share')}");
+				},
+				cancel: function(){}
+			});
+			wx.onMenuShareTimeline({
+				title: '{$llll111ll11l11lll1111111ll1111l}',
+				link: '{php echo $this->ll11ll1l1l11l11ll11llll1l1ll11l('show','xiaof_toupiao','&id='.$l111l111ll1l1111l1l1l11111l1lll['id'].'')}',
+				imgUrl: '{php echo tomedia($l111l111ll1l1111l1l1l11111l1lll['pic']);}',
+				success: function () {
+					var This = $(".share");
+					This.html(parseInt(This.html())+1);				
+					$.get("{php echo $this->ll11ll1l1l11l11ll11llll1l1ll11l('vote','xiaof_toupiao','&id='.$l111l111ll1l1111l1l1l11111l1lll[id].'&type=share')}");
+				},
+				cancel: function () {}
+			});
+		});
+	});
+</script>
+</html>

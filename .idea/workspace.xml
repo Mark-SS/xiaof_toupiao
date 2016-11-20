@@ -1,0 +1,1077 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="6e868543-b3eb-401f-b17c-7fefb0bf2e2b" name="默认的" comment="" />
+    <ignored path="xiaof_toupiao.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <ignored path=".idea/dataSources.local.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="xiaof_toupiao" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
+      <file leaf-file-name="site.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/site.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="442">
+              <caret line="2497" column="43" selection-start-line="2497" selection-start-column="43" selection-end-line="2497" selection-end-column="43" />
+              <folding>
+                <marker date="1479093044754" expanded="true" signature="2757:2832" ph="SELECT * FRO... ${tablename('xiaof_toupiao_rule')}" />
+                <marker date="1479093044754" expanded="true" signature="3004:3106" ph="SELECT * FRO... ${tablename('rule')}" />
+                <marker date="1479093044754" expanded="true" signature="3286:3376" ph="DELETE FROM " />
+                <marker date="1479093044754" expanded="true" signature="5538:5621" ph="SELECT * FRO... ${tablename('xiaof_toupiao_setting')}" />
+                <marker date="1479093044754" expanded="true" signature="7123:7252" ph="SELECT * FRO... ${tablename('xiaof_toupiao_acid')}" />
+                <marker date="1479093044754" expanded="true" signature="8039:8146" ph="SELECT * FRO... ${tablename(&quot;mc_mapping_fans&quot;)}" />
+                <marker date="1479093044754" expanded="true" signature="10743:10869" ph="DELETE FROM " />
+                <marker date="1479093044754" expanded="true" signature="11354:11437" ph="SELECT * FRO... ${tablename('xiaof_toupiao_setting')}" />
+                <marker date="1479093044754" expanded="true" signature="12819:12840" ph="SELECT COUNT... ${tablename('xiaof_toupiao_draw')}" />
+                <marker date="1479093044754" expanded="true" signature="12998:13194" ph="SELECT * FRO... ${tablename('xiaof_toupiao_draw')}" />
+                <marker date="1479093044754" expanded="true" signature="13486:13738" ph="SELECT `addr... ${tablename('xiaof_relation')}" />
+                <marker date="1479093044754" expanded="true" signature="14862:14990" ph="SELECT COUNT... ${tablename('mc_mapping_fans')}" />
+                <marker date="1479093044754" expanded="true" signature="15146:15337" ph="SELECT * FRO... ${tablename('mc_mapping_fans')}" />
+                <marker date="1479093044754" expanded="true" signature="17840:17943" ph="DELETE FROM " />
+                <marker date="1479093044754" expanded="true" signature="17962:18070" ph="DELETE FROM " />
+                <marker date="1479093044754" expanded="true" signature="18089:18200" ph="DELETE FROM " />
+                <marker date="1479093044754" expanded="true" signature="18219:18326" ph="DELETE FROM " />
+                <marker date="1479093044754" expanded="true" signature="18345:18455" ph="DELETE FROM " />
+                <marker date="1479093044754" expanded="true" signature="18474:18581" ph="DELETE FROM " />
+                <marker date="1479093044754" expanded="true" signature="18600:18708" ph="DELETE FROM " />
+                <marker date="1479093044754" expanded="true" signature="18727:18835" ph="DELETE FROM " />
+                <marker date="1479093044754" expanded="true" signature="18854:18962" ph="DELETE FROM " />
+                <marker date="1479093044754" expanded="true" signature="18985:19114" ph="DELETE FROM " />
+                <marker date="1479093044754" expanded="true" signature="19450:19521" ph="SELECT * FRO... ${tablename('xiaof_toupiao_pic')}" />
+                <marker date="1479093044754" expanded="true" signature="20224:20327" ph="DELETE FROM " />
+                <marker date="1479093044754" expanded="true" signature="20346:20454" ph="DELETE FROM " />
+                <marker date="1479093044754" expanded="true" signature="20473:20584" ph="DELETE FROM " />
+                <marker date="1479093044754" expanded="true" signature="20603:20710" ph="DELETE FROM " />
+                <marker date="1479093044754" expanded="true" signature="20729:20839" ph="DELETE FROM " />
+                <marker date="1479093044754" expanded="true" signature="20858:20965" ph="DELETE FROM " />
+                <marker date="1479093044754" expanded="true" signature="20984:21092" ph="DELETE FROM " />
+                <marker date="1479093044754" expanded="true" signature="21111:21219" ph="DELETE FROM " />
+                <marker date="1479093044754" expanded="true" signature="21238:21346" ph="DELETE FROM " />
+                <marker date="1479093044754" expanded="true" signature="21369:21498" ph="DELETE FROM " />
+                <marker date="1479093044754" expanded="true" signature="21669:21751" ph="SELECT COUNT... ${tablename('xiaof_toupiao_setting')}" />
+                <marker date="1479093044754" expanded="true" signature="21823:22014" ph="SELECT * FRO... ${tablename('xiaof_toupiao_setting')}" />
+                <marker date="1479093044754" expanded="true" signature="22859:22941" ph="SELECT * FRO... ${tablename(&quot;uni_settings&quot;)}" />
+                <marker date="1479093044754" expanded="true" signature="24051:24140" ph="SELECT `deta... ${tablename(&quot;xiaof_toupiao_setting&quot;)}" />
+                <marker date="1479093044754" expanded="true" signature="25082:25101" ph="..." />
+                <marker date="1479093044754" expanded="true" signature="25142:25161" ph="..." />
+                <marker date="1479093044754" expanded="true" signature="25202:25221" ph="..." />
+                <marker date="1479093044754" expanded="true" signature="25263:25282" ph="..." />
+                <marker date="1479093044754" expanded="true" signature="25335:25354" ph="..." />
+                <marker date="1479093044754" expanded="true" signature="25388:25407" ph="..." />
+                <marker date="1479093044754" expanded="true" signature="25435:25454" ph="..." />
+                <marker date="1479093044754" expanded="true" signature="25489:25508" ph="..." />
+                <marker date="1479093044754" expanded="true" signature="27230:27475" ph="SELECT COUNT... ${tablename('xiaof_toupiao_draw')}" />
+                <marker date="1479093044754" expanded="true" signature="42789:42861" ph="SELECT * FRO... ${tablename('xiaof_toupiao_acid')}" />
+                <marker date="1479093044754" expanded="true" signature="43391:43574" ph="DELETE FROM " />
+                <marker date="1479093044754" expanded="true" signature="43757:43848" ph="SELECT * FRO... ${tablename(&quot;xiaof_toupiao_acid&quot;)}" />
+                <marker date="1479093044754" expanded="true" signature="44429:44501" ph="SELECT * FRO... ${tablename('xiaof_toupiao_acid')}" />
+                <marker date="1479093044754" expanded="true" signature="44994:45059" ph="SELECT * FRO... ${tablename(&quot;xiaof_toupiao&quot;)}" />
+                <marker date="1479093044754" expanded="true" signature="45154:45227" ph="SELECT * FRO... ${tablename(&quot;xiaof_toupiao_setting&quot;)}" />
+                <marker date="1479093044754" expanded="true" signature="45510:45592" ph="SELECT * FRO... ${tablename(&quot;xiaof_relation&quot;)}" />
+                <marker date="1479093044754" expanded="true" signature="47192:47299" ph="DELETE FROM " />
+                <marker date="1479093044754" expanded="true" signature="47318:47425" ph="DELETE FROM " />
+                <marker date="1479093044754" expanded="true" signature="47448:47569" ph="DELETE FROM " />
+                <marker date="1479093044754" expanded="true" signature="48018:48101" ph="SELECT * FRO... ${tablename('xiaof_toupiao_setting')}" />
+                <marker date="1479093044754" expanded="true" signature="49992:50013" ph="SELECT COUNT... ${tablename('xiaof_toupiao')}" />
+                <marker date="1479093044754" expanded="true" signature="50166:50395" ph="SELECT * FRO... ${tablename('xiaof_toupiao')}" />
+                <marker date="1479093044754" expanded="true" signature="51365:51736" ph="..." />
+                <marker date="1479093044754" expanded="true" signature="52042:52125" ph="SELECT * FRO... ${tablename('xiaof_toupiao_setting')}" />
+                <marker date="1479093044754" expanded="true" signature="52244:52309" ph="SELECT * FRO... ${tablename(&quot;xiaof_toupiao&quot;)}" />
+                <marker date="1479093044754" expanded="true" signature="52403:52480" ph="SELECT `thum... ${tablename('xiaof_toupiao_pic')}" />
+                <marker date="1479093044754" expanded="true" signature="56234:56322" ph="SELECT * FRO... ${tablename(&quot;xiaof_toupiao&quot;)}" />
+                <marker date="1479093044754" expanded="true" signature="56702:56800" ph="SELECT `uid`... ${tablename(&quot;xiaof_toupiao&quot;)}" />
+                <marker date="1479093044754" expanded="true" signature="59821:59894" ph="SELECT * FRO... ${tablename(&quot;xiaof_toupiao&quot;)}" />
+                <marker date="1479093044754" expanded="true" signature="60667:60750" ph="SELECT * FRO... ${tablename('xiaof_toupiao_setting')}" />
+                <marker date="1479093044754" expanded="true" signature="61548:61674" ph="SELECT * FRO... ${tablename(&quot;xiaof_toupiao&quot;)}" />
+                <marker date="1479093044754" expanded="true" signature="62788:62883" ph="SELECT COUNT... ${tablename('xiaof_toupiao_log')}" />
+                <marker date="1479093044754" expanded="true" signature="62971:63174" ph="SELECT * FRO... ${tablename('xiaof_toupiao_log')}" />
+                <marker date="1479093044754" expanded="true" signature="63461:63526" ph="SELECT * FRO... ${tablename(&quot;xiaof_toupiao&quot;)}" />
+                <marker date="1479093044754" expanded="true" signature="63765:63846" ph="SELECT * FRO... ${tablename(&quot;mc_mapping_fans&quot;)}" />
+                <marker date="1479093044754" expanded="true" signature="64088:64171" ph="SELECT * FRO... ${tablename(&quot;mc_mapping_fans&quot;)}" />
+                <marker date="1479093044754" expanded="true" signature="64423:64650" ph="SELECT COUNT... COUNT" />
+                <marker date="1479093044754" expanded="true" signature="64445:64647" ph="SELECT COUNT... ${tablename('xiaof_toupiao_log')}" />
+                <marker date="1479093044754" expanded="true" signature="64718:64901" ph="SELECT COUNT... ${tablename('xiaof_toupiao_log')}" />
+                <marker date="1479093044754" expanded="true" signature="65007:65142" ph="SELECT `id` ${tablename(&quot;xiaof_toupiao_safe&quot;)}" />
+                <marker date="1479093044754" expanded="true" signature="67554:67637" ph="SELECT * FRO... ${tablename('xiaof_toupiao_setting')}" />
+                <marker date="1479093044754" expanded="true" signature="68280:68406" ph="SELECT * FRO... ${tablename(&quot;xiaof_toupiao&quot;)}" />
+                <marker date="1479093044754" expanded="true" signature="69875:69970" ph="SELECT COUNT... ${tablename('xiaof_toupiao_log')}" />
+                <marker date="1479093044754" expanded="true" signature="70302:70492" ph="SELECT * FRO... ${tablename('xiaof_toupiao_log')}" />
+                <marker date="1479093044754" expanded="true" signature="70699:70764" ph="SELECT * FRO... ${tablename(&quot;xiaof_toupiao&quot;)}" />
+                <marker date="1479093044754" expanded="true" signature="71006:71087" ph="SELECT * FRO... ${tablename(&quot;mc_mapping_fans&quot;)}" />
+                <marker date="1479093044754" expanded="true" signature="71333:71416" ph="SELECT * FRO... ${tablename(&quot;mc_mapping_fans&quot;)}" />
+                <marker date="1479093044754" expanded="true" signature="71673:71900" ph="SELECT COUNT... COUNT" />
+                <marker date="1479093044754" expanded="true" signature="71695:71897" ph="SELECT COUNT... ${tablename('xiaof_toupiao_log')}" />
+                <marker date="1479093044754" expanded="true" signature="71969:72152" ph="SELECT COUNT... ${tablename('xiaof_toupiao_log')}" />
+                <marker date="1479093044754" expanded="true" signature="74365:74487" ph="SELECT * FRO... ${tablename('xiaof_toupiao')}" />
+                <marker date="1479093044754" expanded="true" signature="74743:74826" ph="SELECT * FRO... ${tablename(&quot;mc_mapping_fans&quot;)}" />
+                <marker date="1479093044754" expanded="true" signature="76135:76218" ph="SELECT * FRO... ${tablename(&quot;mc_mapping_fans&quot;)}" />
+                <marker date="1479093044754" expanded="true" signature="77808:77891" ph="SELECT * FRO... ${tablename('xiaof_toupiao_setting')}" />
+                <marker date="1479093044754" expanded="true" signature="79161:79268" ph="SELECT * FRO... ${tablename('xiaof_toupiao_draw')}" />
+                <marker date="1479093044754" expanded="true" signature="79525:79777" ph="SELECT `addr... ${tablename('xiaof_relation')}" />
+                <marker date="1479093044754" expanded="true" signature="82067:82193" ph="DELETE FROM " />
+                <marker date="1479093044754" expanded="true" signature="82252:82335" ph="SELECT * FRO... ${tablename('xiaof_toupiao_setting')}" />
+                <marker date="1479093044754" expanded="true" signature="83965:83986" ph="SELECT COUNT... ${tablename('xiaof_toupiao_safe')}" />
+                <marker date="1479093044754" expanded="true" signature="84144:84340" ph="SELECT * FRO... ${tablename('xiaof_toupiao_safe')}" />
+                <marker date="1479093044754" expanded="true" signature="86199:86282" ph="SELECT * FRO... ${tablename('xiaof_toupiao_setting')}" />
+                <marker date="1479093044754" expanded="true" signature="86422:86509" ph="SELECT * FRO... ${tablename(&quot;xiaof_toupiao_safe&quot;)}" />
+                <marker date="1479093044754" expanded="true" signature="87919:88040" ph="SELECT *,COU... ${tablename('xiaof_toupiao_log')}" />
+                <marker date="1479093044754" expanded="true" signature="88252:88341" ph="SELECT * FRO... ${tablename(&quot;xiaof_toupiao_manage&quot;)}" />
+                <marker date="1479093044754" expanded="true" signature="89598:89689" ph="SELECT * FRO... ${tablename('xiaof_toupiao_manage')}" />
+                <marker date="1479093044754" expanded="true" signature="90270:90398" ph="DELETE FROM " />
+                <marker date="1479093044754" expanded="true" signature="90502:90635" ph="SELECT COUNT... COUNT" />
+                <marker date="1479093044754" expanded="true" signature="90524:90632" ph="SELECT COUNT... ${tablename('xiaof_toupiao_log')}" />
+                <marker date="1479093044754" expanded="true" signature="90724:90985" ph="SELECT *,COU... ${tablename('xiaof_toupiao_log')}" />
+                <marker date="1479093044754" expanded="true" signature="92372:92462" ph="SELECT `nick... ${tablename(&quot;mc_mapping_fans&quot;)}" />
+                <marker date="1479093044754" expanded="true" signature="92610:92702" ph="SELECT `nick... ${tablename(&quot;mc_mapping_fans&quot;)}" />
+                <marker date="1479093044754" expanded="true" signature="92846:93073" ph="SELECT COUNT... COUNT" />
+                <marker date="1479093044754" expanded="true" signature="92868:93070" ph="SELECT COUNT... ${tablename('xiaof_toupiao_log')}" />
+                <marker date="1479093044754" expanded="true" signature="93222:93357" ph="SELECT `id` ${tablename(&quot;xiaof_toupiao_safe&quot;)}" />
+                <marker date="1479093044754" expanded="true" signature="93613:93762" ph="SELECT SUM(n... ${tablename(&quot;xiaof_toupiao_manage&quot;)}" />
+                <marker date="1479093044754" expanded="true" signature="97628:97857" ph="SELECT * FRO... ${tablename('xiaof_toupiao')}" />
+                <marker date="1479093044754" expanded="true" signature="98248:98322" ph="SELECT COUNT... ${tablename('xiaof_toupiao')}" />
+                <marker date="1479093044754" expanded="true" signature="98438:98514" ph="SELECT SUM(c... ${tablename('xiaof_toupiao')}" />
+                <marker date="1479093044754" expanded="true" signature="98832:98907" ph="SELECT SUM(g... ${tablename('xiaof_toupiao')}" />
+                <marker date="1479093044754" expanded="true" signature="100172:100246" ph="SELECT COUNT... ${tablename('xiaof_toupiao')}" />
+                <marker date="1479093044754" expanded="true" signature="100362:100438" ph="SELECT SUM(c... ${tablename('xiaof_toupiao')}" />
+                <marker date="1479093044754" expanded="true" signature="100756:100831" ph="SELECT SUM(g... ${tablename('xiaof_toupiao')}" />
+                <marker date="1479093044754" expanded="true" signature="102118:102232" ph="SELECT * FRO... ${tablename('xiaof_toupiao')}" />
+                <marker date="1479093044754" expanded="true" signature="102702:102784" ph="SELECT * FRO... ${tablename(&quot;xiaof_toupiao&quot;)}" />
+                <marker date="1479093044754" expanded="true" signature="102927:103113" ph="SELECT (SELE... ${tablename(&quot;xiaof_toupiao&quot;)}" />
+                <marker date="1479093044754" expanded="true" signature="103227:103362" ph="SELECT good ${tablename(&quot;xiaof_toupiao&quot;)}" />
+                <marker date="1479093044754" expanded="true" signature="103530:103666" ph="SELECT good ${tablename(&quot;xiaof_toupiao&quot;)}" />
+                <marker date="1479093044754" expanded="true" signature="103828:104029" ph="SELECT (SELE... ${tablename(&quot;xiaof_toupiao&quot;)}" />
+                <marker date="1479093044754" expanded="true" signature="104580:104651" ph="SELECT * FRO... ${tablename('xiaof_toupiao_pic')}" />
+                <marker date="1479093044754" expanded="true" signature="105482:105643" ph="SELECT * FRO... ${tablename('xiaof_toupiao_log')}" />
+                <marker date="1479093044754" expanded="true" signature="105881:106001" ph="SELECT * FRO... ${tablename('xiaof_toupiao_drawlog')}" />
+                <marker date="1479093044754" expanded="true" signature="106168:106292" ph="SELECT count... ${tablename('xiaof_toupiao_draw')}" />
+                <marker date="1479093044754" expanded="true" signature="106467:106591" ph="SELECT count... ${tablename('xiaof_toupiao_draw')}" />
+                <marker date="1479093044754" expanded="true" signature="106766:106890" ph="SELECT count... ${tablename('xiaof_toupiao_draw')}" />
+                <marker date="1479093044754" expanded="true" signature="107065:107189" ph="SELECT count... ${tablename('xiaof_toupiao_draw')}" />
+                <marker date="1479093044754" expanded="true" signature="109225:109299" ph="SELECT COUNT... ${tablename('xiaof_toupiao')}" />
+                <marker date="1479093044754" expanded="true" signature="109415:109491" ph="SELECT SUM(c... ${tablename('xiaof_toupiao')}" />
+                <marker date="1479093044754" expanded="true" signature="109809:109884" ph="SELECT SUM(g... ${tablename('xiaof_toupiao')}" />
+                <marker date="1479093044754" expanded="true" signature="110743:110823" ph="SELECT `deta... ${tablename(&quot;xiaof_toupiao_setting&quot;)}" />
+                <marker date="1479093044754" expanded="true" signature="111871:111942" ph="SELECT * FRO... ${tablename('xiaof_toupiao_pic')}" />
+                <marker date="1479093044754" expanded="true" signature="112729:112803" ph="SELECT COUNT... ${tablename('xiaof_toupiao')}" />
+                <marker date="1479093044754" expanded="true" signature="112919:112995" ph="SELECT SUM(c... ${tablename('xiaof_toupiao')}" />
+                <marker date="1479093044754" expanded="true" signature="113313:113388" ph="SELECT SUM(g... ${tablename('xiaof_toupiao')}" />
+                <marker date="1479093044754" expanded="true" signature="114464:114581" ph="SELECT * FRO... ${tablename('xiaof_toupiao_draw')}" />
+                <marker date="1479093044754" expanded="true" signature="115207:115281" ph="SELECT `addr... ${tablename('xiaof_relation')}" />
+                <marker date="1479093044754" expanded="true" signature="116950:117126" ph="SELECT COUNT... ${tablename('xiaof_toupiao_draw')}" />
+                <marker date="1479093044754" expanded="true" signature="117180:117456" ph="SELECT * FRO... ${tablename('xiaof_toupiao_draw')}" />
+                <marker date="1479093044754" expanded="true" signature="118994:119012" ph="..." />
+                <marker date="1479093044754" expanded="true" signature="121497:121585" ph="SELECT * FRO... ${tablename(&quot;xiaof_toupiao&quot;)}" />
+                <marker date="1479093044754" expanded="true" signature="123751:123849" ph="SELECT `uid`... ${tablename(&quot;xiaof_toupiao&quot;)}" />
+                <marker date="1479093044754" expanded="true" signature="126313:126378" ph="SELECT * FRO... ${tablename(&quot;xiaof_toupiao&quot;)}" />
+                <marker date="1479093044754" expanded="true" signature="127237:127312" ph="SELECT `url`... ${tablename('xiaof_toupiao_pic')}" />
+                <marker date="1479093044754" expanded="true" signature="128577:128650" ph="SELECT * FRO... ${tablename(&quot;xiaof_toupiao&quot;)}" />
+                <marker date="1479093044754" expanded="true" signature="129912:130002" ph="SELECT * FRO... ${tablename(&quot;xiaof_toupiao&quot;)}" />
+                <marker date="1479093044754" expanded="true" signature="132644:132662" ph="..." />
+                <marker date="1479093044754" expanded="true" signature="139184:139434" ph="SELECT `crea... ${tablename('xiaof_toupiao_log')}" />
+                <marker date="1479093044754" expanded="true" signature="144748:144866" ph="SELECT COUNT... ${tablename(&quot;xiaof_toupiao_log&quot;)}" />
+                <marker date="1479093044754" expanded="true" signature="145408:145626" ph="SELECT COUNT... ${tablename('xiaof_toupiao_log')}" />
+                <marker date="1479093044754" expanded="true" signature="145889:145976" ph="SELECT * FRO... ${tablename(&quot;xiaof_toupiao_safe&quot;)}" />
+                <marker date="1479093044754" expanded="true" signature="146217:146365" ph="SELECT * FRO... ${tablename(&quot;xiaof_toupiao_log&quot;)}" />
+                <marker date="1479093044754" expanded="true" signature="146826:147028" ph="SELECT COUNT... ${tablename('xiaof_toupiao_log')}" />
+                <marker date="1479093044754" expanded="true" signature="147406:147586" ph="SELECT COUNT... ${tablename('xiaof_toupiao_log')}" />
+                <marker date="1479093044754" expanded="true" signature="148517:148817" ph="SELECT COUNT... ${tablename('xiaof_toupiao_log')}" />
+                <marker date="1479093044754" expanded="true" signature="151833:151952" ph="SELECT * FRO... ${tablename(&quot;xiaof_relation&quot;)}" />
+                <marker date="1479093044754" expanded="true" signature="152119:152305" ph="SELECT (SELE... ${tablename(&quot;xiaof_toupiao&quot;)}" />
+                <marker date="1479093044754" expanded="true" signature="152423:152560" ph="SELECT `good... ${tablename(&quot;xiaof_toupiao&quot;)}" />
+                <marker date="1479093044754" expanded="true" signature="152767:152905" ph="SELECT `good... ${tablename(&quot;xiaof_toupiao&quot;)}" />
+                <marker date="1479093044754" expanded="true" signature="153106:153307" ph="SELECT (SELE... ${tablename(&quot;xiaof_toupiao&quot;)}" />
+                <marker date="1479093044754" expanded="true" signature="154487:154559" ph="SELECT * FRO... ${tablename('xiaof_toupiao_acid')}" />
+                <marker date="1479093044754" expanded="true" signature="155182:155325" ph="SELECT * FRO... ${tablename('xiaof_toupiao_rule')}" />
+                <marker date="1479093044754" expanded="true" signature="155650:155669" ph="..." />
+                <marker date="1479093044754" expanded="true" signature="157092:157209" ph="SELECT * FRO... ${tablename('xiaof_toupiao_draw')}" />
+                <marker date="1479093044754" expanded="true" signature="157443:157506" ph="SELECT * FRO... ${tablename('xiaof_toupiao')}" />
+                <marker date="1479093044754" expanded="true" signature="158735:158854" ph="SELECT * FRO... ${tablename(&quot;xiaof_relation&quot;)}" />
+                <marker date="1479093044754" expanded="true" signature="160295:160313" ph="..." />
+                <marker date="1479093044754" expanded="true" signature="161686:161887" ph="SELECT COUNT... ${tablename('xiaof_toupiao_draw')}" />
+                <marker date="1479093044754" expanded="true" signature="168136:168279" ph="SELECT * FRO... ${tablename('xiaof_toupiao_rule')}" />
+                <marker date="1479093044754" expanded="true" signature="171759:171867" ph="SELECT qrcid... ${tablename('qrcode')}" />
+                <marker date="1479093044754" expanded="true" signature="175978:176093" ph="SELECT COUNT... ${tablename('xiaof_toupiao_draw')}" />
+                <marker date="1479093044754" expanded="true" signature="189963:190124" ph="SELECT COUNT... ${tablename('xiaof_toupiao_smslog')}" />
+                <marker date="1479093044754" expanded="true" signature="190322:190466" ph="SELECT COUNT... ${tablename('xiaof_toupiao_smslog')}" />
+                <marker date="1479093044754" expanded="true" signature="190623:190728" ph="SELECT * FRO... ${tablename(&quot;xiaof_relation&quot;)}" />
+                <marker date="1479093044754" expanded="true" signature="197128:197268" ph="SELECT * FRO... ${tablename('xiaof_toupiao')}" />
+                <marker date="1479093044754" expanded="true" signature="198586:198659" ph="SELECT * FRO... ${tablename(&quot;xiaof_toupiao_setting&quot;)}" />
+                <marker date="1479093044754" expanded="true" signature="199632:199730" ph="SELECT `qrco... ${tablename(&quot;xiaof_toupiao_acid&quot;)}" />
+                <marker date="1479093044754" expanded="true" signature="201768:201878" ph="SELECT uid F... ${tablename('mc_mapping_fans')}" />
+                <marker date="1479093044754" expanded="true" signature="202300:202383" ph="SELECT uid F... ${tablename('mc_mapping_fans')}" />
+                <marker date="1479093044754" expanded="true" signature="204890:204994" ph="SELECT * FRO... ${tablename(&quot;xiaof_relation&quot;)}" />
+                <marker date="1479093044754" expanded="true" signature="205260:205428" ph="SELECT * FRO... ${tablename(&quot;xiaof_relation&quot;)}" />
+                <marker date="1479093044754" expanded="true" signature="206447:206600" ph="SELECT `city... ${tablename(&quot;xiaof_relation&quot;)}" />
+                <marker date="1479093044754" expanded="true" signature="209794:209962" ph="SELECT * FRO... ${tablename(&quot;xiaof_relation&quot;)}" />
+                <marker date="1479093044754" expanded="true" signature="211312:211454" ph="SELECT `open... ${tablename(&quot;mc_mapping_fans&quot;)}" />
+                <marker date="1479093044754" expanded="true" signature="213610:213762" ph="SELECT * FRO... ${tablename(&quot;xiaof_relation&quot;)}" />
+                <marker date="1479093044754" expanded="true" signature="219674:219917" ph="SELECT A.* F... ${tablename(&quot;xiaof_relation&quot;)}" />
+                <marker date="1479093044754" expanded="true" signature="219733:219890" ph="SELECT MAX(i... ${tablename(&quot;xiaof_relation&quot;)}" />
+                <marker date="1479093044754" expanded="true" signature="220638:220842" ph="SELECT * FRO... ${tablename(&quot;xiaof_toupiao&quot;)}" />
+                <marker date="1479093044754" expanded="true" signature="221399:221514" ph="SELECT `foll... ${tablename(&quot;mc_mapping_fans&quot;)}" />
+                <marker date="1479093044754" expanded="true" signature="222011:222083" ph="SELECT * FRO... ${tablename('xiaof_toupiao_acid')}" />
+                <marker date="1479093044754" expanded="true" signature="222938:223058" ph="SELECT `open... ${tablename(&quot;xiaof_relation&quot;)}" />
+                <marker date="1479093044754" expanded="true" signature="223468:223591" ph="SELECT * FRO... ${tablename(&quot;xiaof_relation&quot;)}" />
+                <marker date="1479093044754" expanded="true" signature="227842:227932" ph="DELETE FROM " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="gd.php" pinned="false" current-in-tab="false">
+        <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/gd.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="14256">
+              <caret line="528" column="9" selection-start-line="528" selection-start-column="9" selection-end-line="528" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="image.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/inc/image.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="27">
+              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/template/mobile/js/upload.js" />
+        <option value="$PROJECT_DIR$/template/mobile/credit.html" />
+        <option value="$PROJECT_DIR$/template/mobile/index.html" />
+        <option value="$PROJECT_DIR$/template/mobile/join.html" />
+        <option value="$PROJECT_DIR$/template/mobile/show.html" />
+        <option value="$PROJECT_DIR$/template/mobile/xiaofweui/js/main.js" />
+        <option value="$PROJECT_DIR$/manifest.xml" />
+        <option value="$PROJECT_DIR$/inc/image.php" />
+        <option value="$PROJECT_DIR$/site.php" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-11" />
+    <option name="y" value="-11" />
+    <option name="width" value="1942" />
+    <option name="height" value="1042" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <OptionsSetting value="true" id="添加" />
+    <OptionsSetting value="true" id="移除" />
+    <OptionsSetting value="true" id="签出" />
+    <OptionsSetting value="true" id="更新" />
+    <OptionsSetting value="true" id="状态" />
+    <OptionsSetting value="true" id="编辑" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="xiaof_toupiao" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="xiaof_toupiao" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="xiaof_toupiao" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="xiaof_toupiao" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="xiaof_toupiao" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="image" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="xiaof_toupiao" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="xiaof_toupiao" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="xiaof_toupiao" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="xiaof_toupiao" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="inc" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="File.Encoding" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../EduWebSite" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\project\xiaof_toupiao\resources\image" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
+      <method />
+    </configuration>
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpBehatConfigurationType" factoryName="Behat">
+      <BehatRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server" server_id="8b6e5e83-d585-426e-b67d-86d95ec0dfb2" server_name="219.235.15.202">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <pass-parent-envs>true</pass-parent-envs>
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run-script" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <working-directory />
+      <pass-parent-env>true</pass-parent-env>
+      <envs />
+      <ui />
+      <extra-mocha-options />
+      <test-kind>DIRECTORY</test-kind>
+      <test-directory />
+      <recursive>false</recursive>
+      <method />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6e868543-b3eb-401f-b17c-7fefb0bf2e2b" name="默认的" comment="" />
+      <created>1479057347158</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1479057347158</updated>
+      <workItem from="1479088525473" duration="5110000" />
+      <workItem from="1479101190404" duration="80000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="5190000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-11" y="-11" width="1942" height="1042" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1875" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1703125" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" x="630" y="69" width="180" height="731" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24964234" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="版本控制" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="调试" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32992035" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32891247" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="运行" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="找到" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32978722" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/install.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1215">
+          <caret line="45" column="39" selection-start-line="45" selection-start-column="39" selection-end-line="45" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1026">
+          <caret line="38" column="46" selection-start-line="38" selection-start-column="46" selection-end-line="38" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/mobile/footer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/mobile/drawlist.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/mobile/detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/mobile/ajaxload.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/mobile/show.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="286" column="5" selection-start-line="286" selection-start-column="5" selection-end-line="286" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/mobile/xiaofweui/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/mobile/credit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="312" column="14" selection-start-line="312" selection-start-column="14" selection-end-line="312" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/mobile/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="339" column="11" selection-start-line="339" selection-start-column="11" selection-end-line="339" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/mobile/join.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="221" column="17" selection-start-line="221" selection-start-column="17" selection-end-line="221" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/uninstall.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/preview.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/processor.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/receiver.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/mobile/js/imagesloaded.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/mobile/js/jquery.masonry.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/mobile/js/jquery-2.1.0.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/mobile/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/mobile/js/swiper.jquery.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/mobile/js/upload.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="62" column="3" selection-start-line="62" selection-start-column="3" selection-end-line="62" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/mobile/js/zepto.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/bindacid.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/diagnose.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/mobile/top.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/tool.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/votelog.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/globalsetting.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/excletop.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/excledraw.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/excle.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/edit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/drawlists.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/disableip.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/mobile/xiaofweui/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="350" column="3" selection-start-line="350" selection-start-column="3" selection-end-line="350" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/mobile/show.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="286" column="5" selection-start-line="286" selection-start-column="5" selection-end-line="286" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/mobile/otherfooter.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/mobile/join.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="221" column="17" selection-start-line="221" selection-start-column="17" selection-end-line="221" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/mobile/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="339" column="11" selection-start-line="339" selection-start-column="11" selection-end-line="339" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/mobile/footerone.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/mobile/credit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="312" column="14" selection-start-line="312" selection-start-column="14" selection-end-line="312" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/install.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="45" column="39" selection-start-line="45" selection-start-column="39" selection-end-line="45" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="38" column="46" selection-start-line="38" selection-start-column="46" selection-end-line="38" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/mobile/footer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/mobile/drawlist.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/mobile/detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/mobile/ajaxload.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inc/image.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/gd.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="14256">
+          <caret line="528" column="9" selection-start-line="528" selection-start-column="9" selection-end-line="528" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/site.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="2497" column="43" selection-start-line="2497" selection-start-column="43" selection-end-line="2497" selection-end-column="43" />
+          <folding>
+            <marker date="1479093044754" expanded="true" signature="2757:2832" ph="SELECT * FRO... ${tablename('xiaof_toupiao_rule')}" />
+            <marker date="1479093044754" expanded="true" signature="3004:3106" ph="SELECT * FRO... ${tablename('rule')}" />
+            <marker date="1479093044754" expanded="true" signature="3286:3376" ph="DELETE FROM " />
+            <marker date="1479093044754" expanded="true" signature="5538:5621" ph="SELECT * FRO... ${tablename('xiaof_toupiao_setting')}" />
+            <marker date="1479093044754" expanded="true" signature="7123:7252" ph="SELECT * FRO... ${tablename('xiaof_toupiao_acid')}" />
+            <marker date="1479093044754" expanded="true" signature="8039:8146" ph="SELECT * FRO... ${tablename(&quot;mc_mapping_fans&quot;)}" />
+            <marker date="1479093044754" expanded="true" signature="10743:10869" ph="DELETE FROM " />
+            <marker date="1479093044754" expanded="true" signature="11354:11437" ph="SELECT * FRO... ${tablename('xiaof_toupiao_setting')}" />
+            <marker date="1479093044754" expanded="true" signature="12819:12840" ph="SELECT COUNT... ${tablename('xiaof_toupiao_draw')}" />
+            <marker date="1479093044754" expanded="true" signature="12998:13194" ph="SELECT * FRO... ${tablename('xiaof_toupiao_draw')}" />
+            <marker date="1479093044754" expanded="true" signature="13486:13738" ph="SELECT `addr... ${tablename('xiaof_relation')}" />
+            <marker date="1479093044754" expanded="true" signature="14862:14990" ph="SELECT COUNT... ${tablename('mc_mapping_fans')}" />
+            <marker date="1479093044754" expanded="true" signature="15146:15337" ph="SELECT * FRO... ${tablename('mc_mapping_fans')}" />
+            <marker date="1479093044754" expanded="true" signature="17840:17943" ph="DELETE FROM " />
+            <marker date="1479093044754" expanded="true" signature="17962:18070" ph="DELETE FROM " />
+            <marker date="1479093044754" expanded="true" signature="18089:18200" ph="DELETE FROM " />
+            <marker date="1479093044754" expanded="true" signature="18219:18326" ph="DELETE FROM " />
+            <marker date="1479093044754" expanded="true" signature="18345:18455" ph="DELETE FROM " />
+            <marker date="1479093044754" expanded="true" signature="18474:18581" ph="DELETE FROM " />
+            <marker date="1479093044754" expanded="true" signature="18600:18708" ph="DELETE FROM " />
+            <marker date="1479093044754" expanded="true" signature="18727:18835" ph="DELETE FROM " />
+            <marker date="1479093044754" expanded="true" signature="18854:18962" ph="DELETE FROM " />
+            <marker date="1479093044754" expanded="true" signature="18985:19114" ph="DELETE FROM " />
+            <marker date="1479093044754" expanded="true" signature="19450:19521" ph="SELECT * FRO... ${tablename('xiaof_toupiao_pic')}" />
+            <marker date="1479093044754" expanded="true" signature="20224:20327" ph="DELETE FROM " />
+            <marker date="1479093044754" expanded="true" signature="20346:20454" ph="DELETE FROM " />
+            <marker date="1479093044754" expanded="true" signature="20473:20584" ph="DELETE FROM " />
+            <marker date="1479093044754" expanded="true" signature="20603:20710" ph="DELETE FROM " />
+            <marker date="1479093044754" expanded="true" signature="20729:20839" ph="DELETE FROM " />
+            <marker date="1479093044754" expanded="true" signature="20858:20965" ph="DELETE FROM " />
+            <marker date="1479093044754" expanded="true" signature="20984:21092" ph="DELETE FROM " />
+            <marker date="1479093044754" expanded="true" signature="21111:21219" ph="DELETE FROM " />
+            <marker date="1479093044754" expanded="true" signature="21238:21346" ph="DELETE FROM " />
+            <marker date="1479093044754" expanded="true" signature="21369:21498" ph="DELETE FROM " />
+            <marker date="1479093044754" expanded="true" signature="21669:21751" ph="SELECT COUNT... ${tablename('xiaof_toupiao_setting')}" />
+            <marker date="1479093044754" expanded="true" signature="21823:22014" ph="SELECT * FRO... ${tablename('xiaof_toupiao_setting')}" />
+            <marker date="1479093044754" expanded="true" signature="22859:22941" ph="SELECT * FRO... ${tablename(&quot;uni_settings&quot;)}" />
+            <marker date="1479093044754" expanded="true" signature="24051:24140" ph="SELECT `deta... ${tablename(&quot;xiaof_toupiao_setting&quot;)}" />
+            <marker date="1479093044754" expanded="true" signature="25082:25101" ph="..." />
+            <marker date="1479093044754" expanded="true" signature="25142:25161" ph="..." />
+            <marker date="1479093044754" expanded="true" signature="25202:25221" ph="..." />
+            <marker date="1479093044754" expanded="true" signature="25263:25282" ph="..." />
+            <marker date="1479093044754" expanded="true" signature="25335:25354" ph="..." />
+            <marker date="1479093044754" expanded="true" signature="25388:25407" ph="..." />
+            <marker date="1479093044754" expanded="true" signature="25435:25454" ph="..." />
+            <marker date="1479093044754" expanded="true" signature="25489:25508" ph="..." />
+            <marker date="1479093044754" expanded="true" signature="27230:27475" ph="SELECT COUNT... ${tablename('xiaof_toupiao_draw')}" />
+            <marker date="1479093044754" expanded="true" signature="42789:42861" ph="SELECT * FRO... ${tablename('xiaof_toupiao_acid')}" />
+            <marker date="1479093044754" expanded="true" signature="43391:43574" ph="DELETE FROM " />
+            <marker date="1479093044754" expanded="true" signature="43757:43848" ph="SELECT * FRO... ${tablename(&quot;xiaof_toupiao_acid&quot;)}" />
+            <marker date="1479093044754" expanded="true" signature="44429:44501" ph="SELECT * FRO... ${tablename('xiaof_toupiao_acid')}" />
+            <marker date="1479093044754" expanded="true" signature="44994:45059" ph="SELECT * FRO... ${tablename(&quot;xiaof_toupiao&quot;)}" />
+            <marker date="1479093044754" expanded="true" signature="45154:45227" ph="SELECT * FRO... ${tablename(&quot;xiaof_toupiao_setting&quot;)}" />
+            <marker date="1479093044754" expanded="true" signature="45510:45592" ph="SELECT * FRO... ${tablename(&quot;xiaof_relation&quot;)}" />
+            <marker date="1479093044754" expanded="true" signature="47192:47299" ph="DELETE FROM " />
+            <marker date="1479093044754" expanded="true" signature="47318:47425" ph="DELETE FROM " />
+            <marker date="1479093044754" expanded="true" signature="47448:47569" ph="DELETE FROM " />
+            <marker date="1479093044754" expanded="true" signature="48018:48101" ph="SELECT * FRO... ${tablename('xiaof_toupiao_setting')}" />
+            <marker date="1479093044754" expanded="true" signature="49992:50013" ph="SELECT COUNT... ${tablename('xiaof_toupiao')}" />
+            <marker date="1479093044754" expanded="true" signature="50166:50395" ph="SELECT * FRO... ${tablename('xiaof_toupiao')}" />
+            <marker date="1479093044754" expanded="true" signature="51365:51736" ph="..." />
+            <marker date="1479093044754" expanded="true" signature="52042:52125" ph="SELECT * FRO... ${tablename('xiaof_toupiao_setting')}" />
+            <marker date="1479093044754" expanded="true" signature="52244:52309" ph="SELECT * FRO... ${tablename(&quot;xiaof_toupiao&quot;)}" />
+            <marker date="1479093044754" expanded="true" signature="52403:52480" ph="SELECT `thum... ${tablename('xiaof_toupiao_pic')}" />
+            <marker date="1479093044754" expanded="true" signature="56234:56322" ph="SELECT * FRO... ${tablename(&quot;xiaof_toupiao&quot;)}" />
+            <marker date="1479093044754" expanded="true" signature="56702:56800" ph="SELECT `uid`... ${tablename(&quot;xiaof_toupiao&quot;)}" />
+            <marker date="1479093044754" expanded="true" signature="59821:59894" ph="SELECT * FRO... ${tablename(&quot;xiaof_toupiao&quot;)}" />
+            <marker date="1479093044754" expanded="true" signature="60667:60750" ph="SELECT * FRO... ${tablename('xiaof_toupiao_setting')}" />
+            <marker date="1479093044754" expanded="true" signature="61548:61674" ph="SELECT * FRO... ${tablename(&quot;xiaof_toupiao&quot;)}" />
+            <marker date="1479093044754" expanded="true" signature="62788:62883" ph="SELECT COUNT... ${tablename('xiaof_toupiao_log')}" />
+            <marker date="1479093044754" expanded="true" signature="62971:63174" ph="SELECT * FRO... ${tablename('xiaof_toupiao_log')}" />
+            <marker date="1479093044754" expanded="true" signature="63461:63526" ph="SELECT * FRO... ${tablename(&quot;xiaof_toupiao&quot;)}" />
+            <marker date="1479093044754" expanded="true" signature="63765:63846" ph="SELECT * FRO... ${tablename(&quot;mc_mapping_fans&quot;)}" />
+            <marker date="1479093044754" expanded="true" signature="64088:64171" ph="SELECT * FRO... ${tablename(&quot;mc_mapping_fans&quot;)}" />
+            <marker date="1479093044754" expanded="true" signature="64423:64650" ph="SELECT COUNT... COUNT" />
+            <marker date="1479093044754" expanded="true" signature="64445:64647" ph="SELECT COUNT... ${tablename('xiaof_toupiao_log')}" />
+            <marker date="1479093044754" expanded="true" signature="64718:64901" ph="SELECT COUNT... ${tablename('xiaof_toupiao_log')}" />
+            <marker date="1479093044754" expanded="true" signature="65007:65142" ph="SELECT `id` ${tablename(&quot;xiaof_toupiao_safe&quot;)}" />
+            <marker date="1479093044754" expanded="true" signature="67554:67637" ph="SELECT * FRO... ${tablename('xiaof_toupiao_setting')}" />
+            <marker date="1479093044754" expanded="true" signature="68280:68406" ph="SELECT * FRO... ${tablename(&quot;xiaof_toupiao&quot;)}" />
+            <marker date="1479093044754" expanded="true" signature="69875:69970" ph="SELECT COUNT... ${tablename('xiaof_toupiao_log')}" />
+            <marker date="1479093044754" expanded="true" signature="70302:70492" ph="SELECT * FRO... ${tablename('xiaof_toupiao_log')}" />
+            <marker date="1479093044754" expanded="true" signature="70699:70764" ph="SELECT * FRO... ${tablename(&quot;xiaof_toupiao&quot;)}" />
+            <marker date="1479093044754" expanded="true" signature="71006:71087" ph="SELECT * FRO... ${tablename(&quot;mc_mapping_fans&quot;)}" />
+            <marker date="1479093044754" expanded="true" signature="71333:71416" ph="SELECT * FRO... ${tablename(&quot;mc_mapping_fans&quot;)}" />
+            <marker date="1479093044754" expanded="true" signature="71673:71900" ph="SELECT COUNT... COUNT" />
+            <marker date="1479093044754" expanded="true" signature="71695:71897" ph="SELECT COUNT... ${tablename('xiaof_toupiao_log')}" />
+            <marker date="1479093044754" expanded="true" signature="71969:72152" ph="SELECT COUNT... ${tablename('xiaof_toupiao_log')}" />
+            <marker date="1479093044754" expanded="true" signature="74365:74487" ph="SELECT * FRO... ${tablename('xiaof_toupiao')}" />
+            <marker date="1479093044754" expanded="true" signature="74743:74826" ph="SELECT * FRO... ${tablename(&quot;mc_mapping_fans&quot;)}" />
+            <marker date="1479093044754" expanded="true" signature="76135:76218" ph="SELECT * FRO... ${tablename(&quot;mc_mapping_fans&quot;)}" />
+            <marker date="1479093044754" expanded="true" signature="77808:77891" ph="SELECT * FRO... ${tablename('xiaof_toupiao_setting')}" />
+            <marker date="1479093044754" expanded="true" signature="79161:79268" ph="SELECT * FRO... ${tablename('xiaof_toupiao_draw')}" />
+            <marker date="1479093044754" expanded="true" signature="79525:79777" ph="SELECT `addr... ${tablename('xiaof_relation')}" />
+            <marker date="1479093044754" expanded="true" signature="82067:82193" ph="DELETE FROM " />
+            <marker date="1479093044754" expanded="true" signature="82252:82335" ph="SELECT * FRO... ${tablename('xiaof_toupiao_setting')}" />
+            <marker date="1479093044754" expanded="true" signature="83965:83986" ph="SELECT COUNT... ${tablename('xiaof_toupiao_safe')}" />
+            <marker date="1479093044754" expanded="true" signature="84144:84340" ph="SELECT * FRO... ${tablename('xiaof_toupiao_safe')}" />
+            <marker date="1479093044754" expanded="true" signature="86199:86282" ph="SELECT * FRO... ${tablename('xiaof_toupiao_setting')}" />
+            <marker date="1479093044754" expanded="true" signature="86422:86509" ph="SELECT * FRO... ${tablename(&quot;xiaof_toupiao_safe&quot;)}" />
+            <marker date="1479093044754" expanded="true" signature="87919:88040" ph="SELECT *,COU... ${tablename('xiaof_toupiao_log')}" />
+            <marker date="1479093044754" expanded="true" signature="88252:88341" ph="SELECT * FRO... ${tablename(&quot;xiaof_toupiao_manage&quot;)}" />
+            <marker date="1479093044754" expanded="true" signature="89598:89689" ph="SELECT * FRO... ${tablename('xiaof_toupiao_manage')}" />
+            <marker date="1479093044754" expanded="true" signature="90270:90398" ph="DELETE FROM " />
+            <marker date="1479093044754" expanded="true" signature="90502:90635" ph="SELECT COUNT... COUNT" />
+            <marker date="1479093044754" expanded="true" signature="90524:90632" ph="SELECT COUNT... ${tablename('xiaof_toupiao_log')}" />
+            <marker date="1479093044754" expanded="true" signature="90724:90985" ph="SELECT *,COU... ${tablename('xiaof_toupiao_log')}" />
+            <marker date="1479093044754" expanded="true" signature="92372:92462" ph="SELECT `nick... ${tablename(&quot;mc_mapping_fans&quot;)}" />
+            <marker date="1479093044754" expanded="true" signature="92610:92702" ph="SELECT `nick... ${tablename(&quot;mc_mapping_fans&quot;)}" />
+            <marker date="1479093044754" expanded="true" signature="92846:93073" ph="SELECT COUNT... COUNT" />
+            <marker date="1479093044754" expanded="true" signature="92868:93070" ph="SELECT COUNT... ${tablename('xiaof_toupiao_log')}" />
+            <marker date="1479093044754" expanded="true" signature="93222:93357" ph="SELECT `id` ${tablename(&quot;xiaof_toupiao_safe&quot;)}" />
+            <marker date="1479093044754" expanded="true" signature="93613:93762" ph="SELECT SUM(n... ${tablename(&quot;xiaof_toupiao_manage&quot;)}" />
+            <marker date="1479093044754" expanded="true" signature="97628:97857" ph="SELECT * FRO... ${tablename('xiaof_toupiao')}" />
+            <marker date="1479093044754" expanded="true" signature="98248:98322" ph="SELECT COUNT... ${tablename('xiaof_toupiao')}" />
+            <marker date="1479093044754" expanded="true" signature="98438:98514" ph="SELECT SUM(c... ${tablename('xiaof_toupiao')}" />
+            <marker date="1479093044754" expanded="true" signature="98832:98907" ph="SELECT SUM(g... ${tablename('xiaof_toupiao')}" />
+            <marker date="1479093044754" expanded="true" signature="100172:100246" ph="SELECT COUNT... ${tablename('xiaof_toupiao')}" />
+            <marker date="1479093044754" expanded="true" signature="100362:100438" ph="SELECT SUM(c... ${tablename('xiaof_toupiao')}" />
+            <marker date="1479093044754" expanded="true" signature="100756:100831" ph="SELECT SUM(g... ${tablename('xiaof_toupiao')}" />
+            <marker date="1479093044754" expanded="true" signature="102118:102232" ph="SELECT * FRO... ${tablename('xiaof_toupiao')}" />
+            <marker date="1479093044754" expanded="true" signature="102702:102784" ph="SELECT * FRO... ${tablename(&quot;xiaof_toupiao&quot;)}" />
+            <marker date="1479093044754" expanded="true" signature="102927:103113" ph="SELECT (SELE... ${tablename(&quot;xiaof_toupiao&quot;)}" />
+            <marker date="1479093044754" expanded="true" signature="103227:103362" ph="SELECT good ${tablename(&quot;xiaof_toupiao&quot;)}" />
+            <marker date="1479093044754" expanded="true" signature="103530:103666" ph="SELECT good ${tablename(&quot;xiaof_toupiao&quot;)}" />
+            <marker date="1479093044754" expanded="true" signature="103828:104029" ph="SELECT (SELE... ${tablename(&quot;xiaof_toupiao&quot;)}" />
+            <marker date="1479093044754" expanded="true" signature="104580:104651" ph="SELECT * FRO... ${tablename('xiaof_toupiao_pic')}" />
+            <marker date="1479093044754" expanded="true" signature="105482:105643" ph="SELECT * FRO... ${tablename('xiaof_toupiao_log')}" />
+            <marker date="1479093044754" expanded="true" signature="105881:106001" ph="SELECT * FRO... ${tablename('xiaof_toupiao_drawlog')}" />
+            <marker date="1479093044754" expanded="true" signature="106168:106292" ph="SELECT count... ${tablename('xiaof_toupiao_draw')}" />
+            <marker date="1479093044754" expanded="true" signature="106467:106591" ph="SELECT count... ${tablename('xiaof_toupiao_draw')}" />
+            <marker date="1479093044754" expanded="true" signature="106766:106890" ph="SELECT count... ${tablename('xiaof_toupiao_draw')}" />
+            <marker date="1479093044754" expanded="true" signature="107065:107189" ph="SELECT count... ${tablename('xiaof_toupiao_draw')}" />
+            <marker date="1479093044754" expanded="true" signature="109225:109299" ph="SELECT COUNT... ${tablename('xiaof_toupiao')}" />
+            <marker date="1479093044754" expanded="true" signature="109415:109491" ph="SELECT SUM(c... ${tablename('xiaof_toupiao')}" />
+            <marker date="1479093044754" expanded="true" signature="109809:109884" ph="SELECT SUM(g... ${tablename('xiaof_toupiao')}" />
+            <marker date="1479093044754" expanded="true" signature="110743:110823" ph="SELECT `deta... ${tablename(&quot;xiaof_toupiao_setting&quot;)}" />
+            <marker date="1479093044754" expanded="true" signature="111871:111942" ph="SELECT * FRO... ${tablename('xiaof_toupiao_pic')}" />
+            <marker date="1479093044754" expanded="true" signature="112729:112803" ph="SELECT COUNT... ${tablename('xiaof_toupiao')}" />
+            <marker date="1479093044754" expanded="true" signature="112919:112995" ph="SELECT SUM(c... ${tablename('xiaof_toupiao')}" />
+            <marker date="1479093044754" expanded="true" signature="113313:113388" ph="SELECT SUM(g... ${tablename('xiaof_toupiao')}" />
+            <marker date="1479093044754" expanded="true" signature="114464:114581" ph="SELECT * FRO... ${tablename('xiaof_toupiao_draw')}" />
+            <marker date="1479093044754" expanded="true" signature="115207:115281" ph="SELECT `addr... ${tablename('xiaof_relation')}" />
+            <marker date="1479093044754" expanded="true" signature="116950:117126" ph="SELECT COUNT... ${tablename('xiaof_toupiao_draw')}" />
+            <marker date="1479093044754" expanded="true" signature="117180:117456" ph="SELECT * FRO... ${tablename('xiaof_toupiao_draw')}" />
+            <marker date="1479093044754" expanded="true" signature="118994:119012" ph="..." />
+            <marker date="1479093044754" expanded="true" signature="121497:121585" ph="SELECT * FRO... ${tablename(&quot;xiaof_toupiao&quot;)}" />
+            <marker date="1479093044754" expanded="true" signature="123751:123849" ph="SELECT `uid`... ${tablename(&quot;xiaof_toupiao&quot;)}" />
+            <marker date="1479093044754" expanded="true" signature="126313:126378" ph="SELECT * FRO... ${tablename(&quot;xiaof_toupiao&quot;)}" />
+            <marker date="1479093044754" expanded="true" signature="127237:127312" ph="SELECT `url`... ${tablename('xiaof_toupiao_pic')}" />
+            <marker date="1479093044754" expanded="true" signature="128577:128650" ph="SELECT * FRO... ${tablename(&quot;xiaof_toupiao&quot;)}" />
+            <marker date="1479093044754" expanded="true" signature="129912:130002" ph="SELECT * FRO... ${tablename(&quot;xiaof_toupiao&quot;)}" />
+            <marker date="1479093044754" expanded="true" signature="132644:132662" ph="..." />
+            <marker date="1479093044754" expanded="true" signature="139184:139434" ph="SELECT `crea... ${tablename('xiaof_toupiao_log')}" />
+            <marker date="1479093044754" expanded="true" signature="144748:144866" ph="SELECT COUNT... ${tablename(&quot;xiaof_toupiao_log&quot;)}" />
+            <marker date="1479093044754" expanded="true" signature="145408:145626" ph="SELECT COUNT... ${tablename('xiaof_toupiao_log')}" />
+            <marker date="1479093044754" expanded="true" signature="145889:145976" ph="SELECT * FRO... ${tablename(&quot;xiaof_toupiao_safe&quot;)}" />
+            <marker date="1479093044754" expanded="true" signature="146217:146365" ph="SELECT * FRO... ${tablename(&quot;xiaof_toupiao_log&quot;)}" />
+            <marker date="1479093044754" expanded="true" signature="146826:147028" ph="SELECT COUNT... ${tablename('xiaof_toupiao_log')}" />
+            <marker date="1479093044754" expanded="true" signature="147406:147586" ph="SELECT COUNT... ${tablename('xiaof_toupiao_log')}" />
+            <marker date="1479093044754" expanded="true" signature="148517:148817" ph="SELECT COUNT... ${tablename('xiaof_toupiao_log')}" />
+            <marker date="1479093044754" expanded="true" signature="151833:151952" ph="SELECT * FRO... ${tablename(&quot;xiaof_relation&quot;)}" />
+            <marker date="1479093044754" expanded="true" signature="152119:152305" ph="SELECT (SELE... ${tablename(&quot;xiaof_toupiao&quot;)}" />
+            <marker date="1479093044754" expanded="true" signature="152423:152560" ph="SELECT `good... ${tablename(&quot;xiaof_toupiao&quot;)}" />
+            <marker date="1479093044754" expanded="true" signature="152767:152905" ph="SELECT `good... ${tablename(&quot;xiaof_toupiao&quot;)}" />
+            <marker date="1479093044754" expanded="true" signature="153106:153307" ph="SELECT (SELE... ${tablename(&quot;xiaof_toupiao&quot;)}" />
+            <marker date="1479093044754" expanded="true" signature="154487:154559" ph="SELECT * FRO... ${tablename('xiaof_toupiao_acid')}" />
+            <marker date="1479093044754" expanded="true" signature="155182:155325" ph="SELECT * FRO... ${tablename('xiaof_toupiao_rule')}" />
+            <marker date="1479093044754" expanded="true" signature="155650:155669" ph="..." />
+            <marker date="1479093044754" expanded="true" signature="157092:157209" ph="SELECT * FRO... ${tablename('xiaof_toupiao_draw')}" />
+            <marker date="1479093044754" expanded="true" signature="157443:157506" ph="SELECT * FRO... ${tablename('xiaof_toupiao')}" />
+            <marker date="1479093044754" expanded="true" signature="158735:158854" ph="SELECT * FRO... ${tablename(&quot;xiaof_relation&quot;)}" />
+            <marker date="1479093044754" expanded="true" signature="160295:160313" ph="..." />
+            <marker date="1479093044754" expanded="true" signature="161686:161887" ph="SELECT COUNT... ${tablename('xiaof_toupiao_draw')}" />
+            <marker date="1479093044754" expanded="true" signature="168136:168279" ph="SELECT * FRO... ${tablename('xiaof_toupiao_rule')}" />
+            <marker date="1479093044754" expanded="true" signature="171759:171867" ph="SELECT qrcid... ${tablename('qrcode')}" />
+            <marker date="1479093044754" expanded="true" signature="175978:176093" ph="SELECT COUNT... ${tablename('xiaof_toupiao_draw')}" />
+            <marker date="1479093044754" expanded="true" signature="189963:190124" ph="SELECT COUNT... ${tablename('xiaof_toupiao_smslog')}" />
+            <marker date="1479093044754" expanded="true" signature="190322:190466" ph="SELECT COUNT... ${tablename('xiaof_toupiao_smslog')}" />
+            <marker date="1479093044754" expanded="true" signature="190623:190728" ph="SELECT * FRO... ${tablename(&quot;xiaof_relation&quot;)}" />
+            <marker date="1479093044754" expanded="true" signature="197128:197268" ph="SELECT * FRO... ${tablename('xiaof_toupiao')}" />
+            <marker date="1479093044754" expanded="true" signature="198586:198659" ph="SELECT * FRO... ${tablename(&quot;xiaof_toupiao_setting&quot;)}" />
+            <marker date="1479093044754" expanded="true" signature="199632:199730" ph="SELECT `qrco... ${tablename(&quot;xiaof_toupiao_acid&quot;)}" />
+            <marker date="1479093044754" expanded="true" signature="201768:201878" ph="SELECT uid F... ${tablename('mc_mapping_fans')}" />
+            <marker date="1479093044754" expanded="true" signature="202300:202383" ph="SELECT uid F... ${tablename('mc_mapping_fans')}" />
+            <marker date="1479093044754" expanded="true" signature="204890:204994" ph="SELECT * FRO... ${tablename(&quot;xiaof_relation&quot;)}" />
+            <marker date="1479093044754" expanded="true" signature="205260:205428" ph="SELECT * FRO... ${tablename(&quot;xiaof_relation&quot;)}" />
+            <marker date="1479093044754" expanded="true" signature="206447:206600" ph="SELECT `city... ${tablename(&quot;xiaof_relation&quot;)}" />
+            <marker date="1479093044754" expanded="true" signature="209794:209962" ph="SELECT * FRO... ${tablename(&quot;xiaof_relation&quot;)}" />
+            <marker date="1479093044754" expanded="true" signature="211312:211454" ph="SELECT `open... ${tablename(&quot;mc_mapping_fans&quot;)}" />
+            <marker date="1479093044754" expanded="true" signature="213610:213762" ph="SELECT * FRO... ${tablename(&quot;xiaof_relation&quot;)}" />
+            <marker date="1479093044754" expanded="true" signature="219674:219917" ph="SELECT A.* F... ${tablename(&quot;xiaof_relation&quot;)}" />
+            <marker date="1479093044754" expanded="true" signature="219733:219890" ph="SELECT MAX(i... ${tablename(&quot;xiaof_relation&quot;)}" />
+            <marker date="1479093044754" expanded="true" signature="220638:220842" ph="SELECT * FRO... ${tablename(&quot;xiaof_toupiao&quot;)}" />
+            <marker date="1479093044754" expanded="true" signature="221399:221514" ph="SELECT `foll... ${tablename(&quot;mc_mapping_fans&quot;)}" />
+            <marker date="1479093044754" expanded="true" signature="222011:222083" ph="SELECT * FRO... ${tablename('xiaof_toupiao_acid')}" />
+            <marker date="1479093044754" expanded="true" signature="222938:223058" ph="SELECT `open... ${tablename(&quot;xiaof_relation&quot;)}" />
+            <marker date="1479093044754" expanded="true" signature="223468:223591" ph="SELECT * FRO... ${tablename(&quot;xiaof_relation&quot;)}" />
+            <marker date="1479093044754" expanded="true" signature="227842:227932" ph="DELETE FROM " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

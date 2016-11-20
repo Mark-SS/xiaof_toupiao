@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" serverName="219.235.15.202">
+    <serverData>
+      <paths name="219.235.15.202">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/weihuodong.mhzxq.com/addons/xiaof_toupiao" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+  </component>
+</project>

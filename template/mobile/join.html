@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>{$l1lll1l1l11l11lllllll1lll11111l['title']}</title>
+    <meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
+    <link rel="stylesheet" type="text/css" href="{MODULE_URL}template/mobile/css/style.css"/>
+	<link rel="stylesheet" type="text/css" href="{$_W['siteroot']}web/resource/css/font-awesome.min.css"/>
+    <script type="text/javascript" src="{MODULE_URL}template/mobile/js/jquery-2.1.0.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="{MODULE_URL}template/mobile/css/swiper.min.css" media="all"/>
+	<script type="text/javascript" src="{MODULE_URL}template/mobile/js/swiper.jquery.min.js"></script>	
+    {php echo register_jssdk(false);}
+	<style>
+		.body-bg-color{ background:{$l1lll1l1l11l11lllllll1lll11111l['bodycolor']}}
+		.button-bg-color{ background:{$l1lll1l1l11l11lllllll1lll11111l['buttoncolor']}}
+		.box-bg-color{ background:{$l1lll1l1l11l11lllllll1lll11111l['boxcolor']}}
+        .title-bg-color{ background:{$l1lll1l1l11l11lllllll1lll11111l['titlecolor']};}
+		body,a{ color:{$l1lll1l1l11l11lllllll1lll11111l['textcolor']}}
+		.bottom{ background:{$l1lll1l1l11l11lllllll1lll11111l['bottomcolor']};}
+	</style>	
+</head>
+<body class="body-bg-color">
+
+<div class="head">
+    <div class="head-banner">
+		{if is_array($l1lll1l1l11l11lllllll1lll11111l['thumb'])}
+			{if count($l1lll1l1l11l11lllllll1lll11111l['thumb']) <=1}
+				<a href="{php echo $this->l1l11111ll1l111llll111ll1111l11(0);}"><img src="{php echo tomedia(reset($l1lll1l1l11l11lllllll1lll11111l['thumb']))}"></a>
+			{else}
+				<div class="swiper-container">
+				  <div class="swiper-wrapper">
+					{php $llll1llll1ll1llll1l11111l111ll1 = 0;}
+					{loop $l1lll1l1l11l11lllllll1lll11111l['thumb'] $llll11lll1lll1111111lll1ll1l111}
+					<div class="swiper-slide"><a href="{php echo $this->l1l11111ll1l111llll111ll1111l11($llll1llll1ll1llll1l11111l111ll1);}"><img src="{php echo tomedia($llll11lll1lll1111111lll1ll1l111);}"></a></div>
+					{php $llll1llll1ll1llll1l11111l111ll1++;}
+					{/loop}
+				  </div>
+				</div>				
+				<script> 
+				$(function(){
+					var mySwiper = new Swiper('.swiper-container', {
+						autoplay: 3000
+					})
+				});
+				</script>				
+			{/if}
+		{else}
+        <img src="{php echo tomedia($l1lll1l1l11l11lllllll1lll11111l['thumb'])}">
+		{/if}
+    </div>
+</div>
+
+<div class="wrapper">
+
+	<h3>报名参加</h3><br/>
+	<form id="join-form">
+	<input type="hidden" name="pid" value="{$l11lll1l1llll11lll1l1l1111l111l['id']}"/>
+	<table class="join-form" width="100%" style="table-layout:fixed;">
+		{if $l1lll1l1l11l11lllllll1lll11111l['opengroups'] >= 1}
+		<tr>
+			<td style="width: 89px;"><span class="label">组别：</span></td>
+			<td>
+				<select name="groups">
+					{loop $l1lll1l1l11l11lllllll1lll11111l['groups'] $l1ll1l111111l1l1111l1l1lll1ll1l $ll1lll1ll1l1lll1llllll1111lll11}
+					<option {if $l1ll1l111111l1l1111l1l1lll1ll1l == $l11lll1l1llll11lll1l1l1111l111l['groups']} selected{/if} value="{$l1ll1l111111l1l1111l1l1lll1ll1l}">{$ll1lll1ll1l1lll1llllll1111lll11['name']}</option>
+					{/loop}
+				</select>
+			</td>
+		</tr>	
+		{/if}
+		<tr>
+			<td style="width: 89px;"><span class="label">名称：</span></td>
+			<td>
+				<input id="name" name="name" value="{$l11lll1l1llll11lll1l1l1111l111l['name']}" {if isset($l11lll1l1llll11lll1l1l1111l111l['id'])}disabled="disabled"{/if} placeholder="您的姓名"/>
+			</td>
+		</tr>		
+		<tr>
+			<td><span class="label">联系电话：</span></td>
+			<td>
+				<input id="phone" type="tel" name="phone" value="{$l11lll1l1llll11lll1l1l1111l111l['phone']}" {if isset($l11lll1l1llll11lll1l1l1111l111l['id'])}disabled="disabled"{/if} placeholder="您的联系电话"/>
+			</td>
+		</tr>			
+		<tr>
+			<td><span class="label">照片：</span></td>
+			<td>
+				<div class="clearfix">
+					<span class="pic-container fn-left" id="pic-container">
+						{loop $ll11l11l1111l1ll1llll11111l11ll $lllll11l11l1111l1l1111ll1llll1l}
+						<span class='picid' onclick="$(this).remove();"><div class='pic-close'>x</div><input type="hidden" name="pics[]" value="{$lllll11l11l1111l1l1111ll1llll1l['url']}"/><img src="{php echo tomedia($lllll11l11l1111l1l1111ll1llll1l['thumb']);}"/></span>
+						{/loop}
+					</span>
+					<span class="filepicker fn-left" id="filepicker"></span>
+				</div>					
+			</td>
+		</tr>
+		{if $l1lll1l1l11l11lllllll1lll11111l['opensound'] >= 1}
+		<style>
+			.xiaof-button{
+				position: relative;
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+				padding-left: 14px;
+				padding-right: 14px;
+				box-sizing: border-box;
+				font-size: 13px;
+				text-align: center;
+				text-decoration: none;
+				color: #FFFFFF;
+				line-height: 29px;
+				border-radius: 5px;
+				overflow: hidden;
+				background-color: #04BE02;	
+				margin-top: 17px;
+			}
+			.sound-box{height:60px;}
+		</style>		
+		<tr>
+			<td><span class="label">语音：</span></td>
+			<td>
+				<div class="clearfix sound-box">
+					<span class="pic-container fn-left" id="sound-container">
+						{if !empty($l11lll1l1llll11lll1l1l1111l111l['sound'])}
+						<input type='hidden' name='sound' value="{$l11lll1l1llll11lll1l1l1111l111l['sound']}"/><span class='sound-play sound-play-1 off1'><i class='fa fa-volume-up'></i></span>
+						<script>
+						$(function(){
+							var audio;
+							$(".sound-play-1").click(function(){
+								if($('#media').length <= 0){
+									var audioSrc = "{$l11lll1l1llll11lll1l1l1111l111l['sound']}";
+									$("body").append('<audio id="media" preload="auto" src="'+audioSrc+'" loop></audio>');
+									audio = $('#media');
+								}
+								if($(this).hasClass("off1")){
+									$(this).removeClass("off1");
+									audio[0].play();
+								}else{
+									$(this).addClass("off1");
+									audio[0].pause();
+								}
+							});
+						});
+						</script>
+						{/if}
+					</span>
+					<span class="fn-left xiaof-button soundbuttons" id="sound">点击录制一分钟音频</span>
+				</div>					
+			</td>
+		</tr>
+		<script>
+            wx.ready(function () {
+				var _$ = ["#sound", "click", "getTime", "startRecord", "rainAllowRecord", 'true', "#sound", "html", "录音中，点击完成", "alert", '授权录音被拒绝', "stopRecord", "#sound", "录制成功，点击重录", "localId", "#sound-container", "<span class='sound-play'><i class='fa fa-volume-up'></i></span>", ".sound-play", "playVoice", "uploadVoice", "get", "sysinfo", "siteroot", "app/index.php?c=entry&do=uploadImg&type=voice&m=xiaof_toupiao&logout=1&i=", "uniacid", "serverId", 'return', "errno", "#sound-container", "append", "<input type='hidden' name='sound' value='", "message", "'/>", "stringify", 'true', 'true', '授权录音被拒绝'];
+				var a, b, c;
+				var d = false;
+				$(_$[0])[_$[1]](function() {
+					if (!d) {
+						d = true;
+						a = new Date()[_$[2]]();
+						recordTimer = setTimeout(function() {
+							wx[_$[3]]({
+								success: function() {
+									localStorage[_$[4]] = _$[5];
+									$(_$[0])[_$[7]](_$[8])
+								},
+								cancel: function() {
+									window[_$[9]](_$[10])
+								}
+							})
+						}, 0x12c)
+					} else {
+						d = false;
+						b = new Date()[_$[2]]();
+						if ((b - a) < 0x12c) {
+							b = 0x0;
+							a = 0x0;
+							clearTimeout(recordTimer)
+						} else {
+							wx[_$[11]]({
+								success: function(e) {
+									$(_$[0])[_$[7]](_$[13]);
+									c = e[_$[14]];
+									$(_$[15])[_$[7]](_$[16]);
+									$(_$[17])[_$[1]](function() {
+										wx[_$[18]]({
+											localId: c
+										})
+									});
+									wx[_$[19]]({
+										localId: c,
+										isShowProgressTips: 0x1,
+										success: function(f) {
+											$[_$[20]](window[_$[21]][_$[22]] + _$[23] + window[_$[21]][_$[24]], {
+												'serverid': encodeURI(f[_$[25]])
+											}, function(g) {
+												var h = new Function(_$[26] + g)();
+												if (h[_$[27]] == 0x0) {
+													$(_$[15])[_$[29]](_$[30] + h[_$[31]] + _$[32])
+												} else {
+													xfdialog(h[_$[31]], true)
+												}
+											})
+										}
+									})
+								},
+								fail: function(e) {
+									window[_$[9]](JSON[_$[33]](e))
+								}
+							})
+						}
+					}
+				});
+				if (!localStorage[_$[4]] || localStorage[_$[4]] !== _$[5]) {
+					wx[_$[3]]({
+						success: function() {
+							localStorage[_$[4]] = _$[5];
+							wx[_$[11]]({})
+						},
+						cancel: function() {
+							window[_$[9]](_$[10])
+						}
+					})
+				}
+
+            });
+		</script>
+		{/if}		
+		<tr>
+			<td><span class="label">描述：</span></td>
+			<td>
+				<textarea id="describe" name="describe" placeholder="您的宣言描述">{$l11lll1l1llll11lll1l1l1111l111l['describe']}</textarea>
+			</td>
+		</tr>	
+		
+		{loop $l1lll1l1l11l11lllllll1lll11111l['joinfield'] $l11l1lll1111111ll1ll1111l11lll1}
+		<tr>
+			<td style="width: 89px;"><span class="label">{$l11l1lll1111111ll1ll1111l11lll1['name']}：</span></td>
+			<td>
+				<input id="{$l11l1lll1111111ll1ll1111l11lll1['sign']}" name="{$l11l1lll1111111ll1ll1111l11lll1['sign']}" value="{$l11lll1l1llll11lll1l1l1111l111l['data'][$l11l1lll1111111ll1ll1111l11lll1['sign']]}" />
+			</td>
+		</tr>
+		{/loop}
+	</table>
+	</form>
+	报名前请仔细阅读活动规则
+	<button class="join-button button-bg-color" id="form-submit">{if isset($l11lll1l1llll11lll1l1l1111l111l['id'])}确认修改{else}确认报名{/if}</button>
+	
+	{if isset($l11lll1l1llll11lll1l1l1111l111l['id'])}<a href="{php echo $this->ll11ll1l1l11l11ll11llll1l1ll11l('show','xiaof_toupiao','&id='.$l11lll1l1llll11lll1l1l1111l111l['id'].'');}" class="join-button button-bg-color">查看我的参赛页</a>{/if}
+</div>
+		<div class='soundshade'>
+			<div class="soundclose" onclick="$('.soundshade').hide();">
+				X
+			</div>		
+			<div class="soundtips">
+				按住录音按钮开始录音，松开结束
+			</div>
+			
+			<div class="soundconfirm">
+				<div class="clean-button">
+					<span class="clean-button-text">使用录音</span>
+				</div>
+			</div>
+			
+			<div class="soundbutton" onselectstart="return false;">
+				<img src="{MODULE_URL}template/mobile/images/sound.png"/><br/>
+				按住录音
+			</div>
+		</div>
+{template 'footer'}
+
+<script type="text/javascript" src="{MODULE_URL}template/mobile/js/main.js"></script>
+
+{if $l1lll1l1l11l11lllllll1lll11111l == false}
+<script type="text/javascript">
+xfdialog("没有找到该活动");
+</script>
+{elseif time() <= strtotime($l1lll1l1l11l11lllllll1lll11111l['joinstart'])}
+<script type="text/javascript">
+xfdialog("活动报名未开始，请开始后再参加，开始时间{$l1lll1l1l11l11lllllll1lll11111l['joinstart']}");
+</script>
+{elseif time() >= strtotime($l1lll1l1l11l11lllllll1lll11111l['joinend'])}
+<script type="text/javascript">
+xfdialog("活动已结束，敬请期待下次活动{$l1lll1l1l11l11lllllll1lll11111l['joinend']}");
+</script>
+{elseif $l1lll1l1l11l11lllllll1lll11111l['openwapjoin'] == 1}
+<script type="text/javascript">
+xfdialog('<p style="text-align:center;">已禁止网页报名！</p>');
+</script>
+{elseif $_W['container'] !== 'wechat'}
+<script type="text/javascript">
+xfdialog("活动只允许在微信上报名参加，请在微信上打开本页面");
+</script>
+{elseif $l1lll1l1l11l11lllllll1lll11111l['joinfollow'] == 1 && !$this->l1ll111l1lll1l1lll11l1l1ll1111l()}
+<script type="text/javascript">
+	{if empty($l1lll1l1l11l11lllllll1lll11111l['followtipstype'])}
+		xfdialog('{if !empty($l1lll1l1l11l11lllllll1lll11111l['followjointext'])}<p style="text-align:center;">{$l1lll1l1l11l11lllllll1lll11111l['followjointext']}</p>{/if}<img width="100%" src="{php echo tomedia($l1lll1l1l11l11lllllll1lll11111l['accountqrcode']);}"/>');
+	{else}
+		xfdialog('{if !empty($l1lll1l1l11l11lllllll1lll11111l['followjointext'])}<p style="text-align:center;">{$l1lll1l1l11l11lllllll1lll11111l['followjointext']}</p>{/if}<div class="play-voice"><img class="voice-on" src="{MODULE_URL}template/mobile/xiaofweui/picture/ms.png"/><img class="voice-off" src="{MODULE_URL}template/mobile/xiaofweui/picture/mp.png"/></div>');
+		playVoice("{php echo tomedia($l1lll1l1l11l11lllllll1lll11111l['followvoice']);}");
+	{/if}
+</script>
+{else}
+<script type="text/javascript">
+var reloadurl = {if empty($l1lll1l1l11l11lllllll1lll11111l['joinjumplink'])}false{else}"{$l1lll1l1l11l11lllllll1lll11111l['joinjumplink']}"{/if};
+var limitpic = {if empty($l1lll1l1l11l11lllllll1lll11111l['limitpic'])}5{else}{$l1lll1l1l11l11lllllll1lll11111l['limitpic']}{/if};
+</script>
+<script type="text/javascript" src="{MODULE_URL}template/mobile/js/upload.js"></script>
+{/if}
+<script type="text/javascript">
+        wx.ready(function () {
+            wx.onMenuShareAppMessage({
+                title: '{$l1lll1l1l11l11lllllll1lll11111l['sharetitle']}',
+                desc: '{php echo trim($l1lll1l1l11l11lllllll1lll11111l['sharecontent']);}',
+                link: '{php echo $this->ll11ll1l1l11l11ll11llll1l1ll11l('join','xiaof_toupiao')}',
+                imgUrl: '{php echo tomedia($l1lll1l1l11l11lllllll1lll11111l['sharethumb'])}',
+                success: function(){
+                },
+                cancel: function(){
+                }
+            });
+
+            wx.onMenuShareTimeline({
+                title: '{$l1lll1l1l11l11lllllll1lll11111l['sharetitle']}',
+                link: '{php echo $this->ll11ll1l1l11l11ll11llll1l1ll11l('join','xiaof_toupiao')}',
+                imgUrl: '{php echo tomedia($l1lll1l1l11l11lllllll1lll11111l['sharethumb']);}',
+                success: function () {
+                },
+                cancel: function () {
+                }
+            });
+        });
+</script>
+</body>
+</html>

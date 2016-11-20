@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>{$l1lll1l1l11l11lllllll1lll11111l['title']}-{$l111l111ll1l1111l1l1l11111l1lll['uid']}号-{$l111l111ll1l1111l1l1l11111l1lll['name']}</title>
+    <meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
+    <link rel="stylesheet" type="text/css" href="{MODULE_URL}template/mobile/css/style.css" media="all"/>
+	<link rel="stylesheet" type="text/css" href="{$_W['siteroot']}web/resource/css/font-awesome.min.css"/>
+	<link rel="stylesheet" type="text/css" href="{MODULE_URL}template/mobile/css/swiper.min.css" media="all"/>
+    <script type="text/javascript" src="{MODULE_URL}template/mobile/js/jquery-2.1.0.min.js"></script>
+    {php echo register_jssdk(false);}
+	<style>
+		.body-bg-color{ background:{$l1lll1l1l11l11lllllll1lll11111l['bodycolor']}}
+		.button-bg-color{ background:{$l1lll1l1l11l11lllllll1lll11111l['buttoncolor']}}
+		.box-bg-color{ background:{$l1lll1l1l11l11lllllll1lll11111l['boxcolor']}}
+        .title-bg-color{ background:{$l1lll1l1l11l11lllllll1lll11111l['titlecolor']};}
+		body,a{ color:{$l1lll1l1l11l11lllllll1lll11111l['textcolor']}}
+		.bottom{ background:{$l1lll1l1l11l11lllllll1lll11111l['bottomcolor']};}
+	</style>		
+</head>
+<body class="body-bg-color">
+
+<div class="head">
+    <div class="head-banner">
+		{if is_array($l1lll1l1l11l11lllllll1lll11111l['thumb'])}
+			{if count($l1lll1l1l11l11lllllll1lll11111l['thumb']) <=1}
+				<a href="{php echo trim($l1lll1l1l11l11lllllll1lll11111l['thumblinkarr'][0]);}"><img src="{php echo tomedia(reset($l1lll1l1l11l11lllllll1lll11111l['thumb']))}"></a>
+			{else}
+				<div class="swiper-container">
+				  <div class="swiper-wrapper">
+					{php $llll1llll1ll1llll1l11111l111ll1 = 0;}
+					{loop $l1lll1l1l11l11lllllll1lll11111l['thumb'] $llll11lll1lll1111111lll1ll1l111}
+					<div class="swiper-slide"><a href="{php echo trim($l1lll1l1l11l11lllllll1lll11111l['thumblinkarr'][$llll1llll1ll1llll1l11111l111ll1]);}"><img src="{php echo tomedia($llll11lll1lll1111111lll1ll1l111);}"></a></div>
+					{php $llll1llll1ll1llll1l11111l111ll1++;}
+					{/loop}
+				  </div>
+				</div>				
+				<script> 
+				$(function(){
+					var mySwiper = new Swiper('.swiper-container', {
+						autoplay: 3000
+					})
+				});
+				</script>				
+			{/if}
+		{else}
+        <img src="{php echo tomedia($l1lll1l1l11l11lllllll1lll11111l['thumb'])}">
+		{/if}
+    </div>
+	
+    <div class="head-count">
+		<span>
+			票数<br>
+			<b class="goods">{$l111l111ll1l1111l1l1l11111l1lll['good']}</b>
+		</span>
+		<span>
+			转发量<br/>
+			<b class="share">{$l111l111ll1l1111l1l1l11111l1lll['share']}</b>
+		</span>
+		<span>
+			浏览量<br/>
+			<b>{$l111l111ll1l1111l1l1l11111l1lll['click']}</b>
+		</span>
+    </div>
+	<div class="head-info box-bg-color">
+		<div class="head-box title-bg-color" >
+			<div class="wrapper clearfix">
+				<div class="fn-left i-radius fn-mr-8">
+					<i style="font-size:29px;margin-top: 4px;" class="fa fa-heart"></i>
+				</div>
+				<div class="fn-left" style="margin-top: 9px; width: 82%;">
+					{if $l111l111ll1l1111l1l1l11111l1lll['describe']==''}{$l1lll1l1l11l11lllllll1lll11111l['describe']}{else}{$l111l111ll1l1111l1l1l11111l1lll['describe']}{/if}
+				</div>
+			</div>
+		</div>	
+		<div class="head-box-hr"></div>
+		<div class="head-box box-pl">
+			<div class="wrapper">
+				<a href="#"><i class="fa fa-cubes fn-mr-8"></i>{$l111l111ll1l1111l1l1l11111l1lll['uid']}号-{$l111l111ll1l1111l1l1l11111l1lll['name']}。当前第{$llll11111l111llll1llll111lll11l}名</a>
+			</div>
+		</div>	
+		<div class="head-box-hr"></div>
+		<div class="head-box box-pl">
+			<div class="wrapper">
+				<i class="fa fa-eye fn-mr-8"></i>距前一名差{$ll11lll11l1l11l11llll11ll1111ll}票，后一名差{$llll1l11ll1111l11l111ll1lll1111}票
+			</div>
+		</div>	
+		{if intval($l1lll1l1l11l11lllllll1lll11111l['opendraw']) == 1 && $l111l111ll1l1111l1l1l11111l1lll['double_at'] > time()}
+		<div class="head-box-hr"></div>
+		<div class="head-box box-pl">
+			<div class="wrapper">
+				<i class="fa fa-clock-o fn-mr-8"></i>双倍投票时间至：{php echo date("Y-m-d H:i", $l111l111ll1l1111l1l1l11111l1lll['double_at'])}结束
+			</div>
+		</div>	
+		{/if}
+		{if intval($l1lll1l1l11l11lllllll1lll11111l['double']) >= 2}
+		<div class="head-box-hr"></div>
+		<div class="head-box box-pl">
+			<div class="wrapper">
+				<i class="fa fa-clock-o fn-mr-8"></i>{php echo $this->l111l1ll1lll11ll11l11lll1ll11l1($l1lll1l1l11l11lllllll1lll11111l['double']);}倍时间：{php echo date("m-d H:i",strtotime($l1lll1l1l11l11lllllll1lll11111l['doublestart']));}  至  {php echo date("m-d H:i",strtotime($l1lll1l1l11l11lllllll1lll11111l['doubleend']));}
+			</div>
+		</div>	
+		{/if}			
+	</div>			
+	
+</div>
+
+<div class="wrapper">
+	<div id="show-container" class="swiper-container">
+			{if $l1lll1l1l11l11lllllll1lll11111l['opensound'] >= 1 && !empty($l111l111ll1l1111l1l1l11111l1lll['sound'])}
+			<div class="show-sound" onclick="soundPlay('{$l111l111ll1l1111l1l1l11111l1lll['sound']}')">
+				<img class="sound-on" src="{MODULE_URL}template/mobile/picture/ms.png"/>
+				<img class="sound-off" src="{MODULE_URL}template/mobile/picture/mp.png"/>
+			</div>
+			{/if}
+		<ul class="show-lists swiper-wrapper">
+			{loop $ll11l11l1111l1ll1llll11111l11ll $ll1l1ll1ll111lllll11l111l1l11ll}
+			<li  class="swiper-slide"><img class="slide-img" src="{php echo tomedia($ll1l1ll1ll111lllll11l111l1l11ll['thumb']);}"/></li>
+			{/loop}
+		</ul>
+		<div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets">
+		</div>			
+	</div>
+	
+	{loop $lllllllllll11l11lllll111l1llll1 $l1l1llll11l1l111lll1l11l11l11ll}
+	<p style="font-size: 16px;padding: 10px 0px;">
+		{$l1l1llll11l1l111lll1l11l11l11ll['name']}：{$l1l1llll11l1l111lll1l11l11l11ll['data']}
+	</p>
+	{/loop}
+	
+	{if !empty($l111l111ll1l1111l1l1l11111l1lll['detail'])}
+	<div style="margin-top: 8px;">
+		{php echo htmlspecialchars_decode($l111l111ll1l1111l1l1l11111l1lll['detail']);}
+	</div>
+	{/if}
+	
+	{if $l1lll1l1l11l11lllllll1lll11111l['openvoteuser'] == 1}
+	<div class="voteusers clearfix">
+	<span class="voteusers-label">
+		<i class="voteusers-label-like fa fa-heart" style="font-size:32px;"></i><span class="voteusers-label-text">支持:</span>
+	</span>
+	{loop $l111lllll11ll111ll1ll111lll1lll $llll111l1l11l1l1ll1l111l1lll1ll}
+		<span class="voteusers-list"><img src="{$llll111l1l11l1l1ll1l111l1lll1ll['avatar']}"/></span>
+	{/loop}
+	</div>
+	{/if}
+	
+	<button class="join-button button-bg-color" onclick="vote('{$l111l111ll1l1111l1l1l11111l1lll['id']}', $('.goods'))">喜欢Ta投一票</button>
+	{if intval($l1lll1l1l11l11lllllll1lll11111l['opendraw']) == 1}
+	<button class="join-button button-bg-color" onclick="$('#cloth-wrappers').show()">使用加速投票道具</button>
+	{/if}	
+	{if intval($l1lll1l1l11l11lllllll1lll11111l['showshare']) == 1 && $l1lll1l1l11l11lllllll1lll11111l['globalsetting']['openshare'] == 1}
+	<button class="join-button button-bg-color" onclick="shareLayer();">喊亲友来加油投票</button>
+	{/if}	
+	{if intval($l1lll1l1l11l11lllllll1lll11111l['openposter']) == 1}
+	<a class="join-button button-bg-color" href="{php echo tomedia($l111l111ll1l1111l1l1l11111l1lll['poster']);}">宣传海报</a>
+	{/if}
+	{if empty($l1lll1l1l11l11lllllll1lll11111l['openwapjoin'])}
+	<a class="join-button button-bg-color" href="{php echo $this->ll11ll1l1l11l11ll11llll1l1ll11l('join');}">我也来参加</a>
+	{/if}
+	<a class="join-button button-bg-color" href="{php echo $this->ll11ll1l1l11l11ll11llll1l1ll11l('index');}">点击查看更多</a>
+</div>
+{if intval($l1lll1l1l11l11lllllll1lll11111l['opendraw']) == 1}
+<div id="cloth-wrappers" class="cloth-wrappers animated slideInUp" style="display: none;">
+<a href="javascript:;" onclick="$('#cloth-wrappers').hide();" class="close" style="display: inline;">x</a>
+	<div class="cloth-box">
+		<div class="box-shadow body-bg-color">
+			<table>
+				<tr>
+					<td>
+						<div class="load-item" data="3">
+							双倍投票券<br/>
+							半小时<br/>
+							数量：x{$l11llll1lll111l1lll1l1ll1l11lll}
+						</div>
+					</td>
+					<td>
+						<div class="load-item" data="4">
+							双倍投票券<br/>
+							一小时<br/>
+							数量：x{$ll1111l1ll11ll1l1ll111l11ll1ll1}
+						</div>					
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<div class="load-item" data="5">
+							双倍投票券<br/>
+							二小时<br/>
+							数量：x{$l1llllll1lll1llll1ll111111l11l1}
+						</div>					
+					</td>
+					<td>
+						<div class="load-item" data="6">
+							双倍投票券<br/>
+							八小时<br/>
+							数量：x{$ll1ll1ll1l111llllll11lllll1llll}
+						</div>						
+					</td>
+				</tr>		
+			</table>
+			
+		</div>
+		<div class="load-intro">点击使用。投票券可在积分抽奖获取</div>
+	</div>
+</div>
+<script type="text/javascript">
+	$(".load-item").click(function(){
+		var type = $(this).attr("data");
+		$.get("{php echo $this->ll11ll1l1l11l11ll11llll1l1ll11l('useprop')}",{'type':type,'pid':{$l111l111ll1l1111l1l1l11111l1lll['id']},'uid':{$l111l111ll1l1111l1l1l11111l1lll['uid']}},function(data){
+            var result = new Function('return' + data)();
+			if (result.errno == 0) {
+				xfdialog(result.message, true);
+				setTimeout(function(){
+					location.reload();
+				},2000);
+				return ;
+			}
+			xfdialog(result.message, true);		
+		});
+	});
+</script>
+
+<div class="box-bg-color" style="margin-top: 12px;">
+	<div class="head-box title-bg-color" >
+		<div class="wrapper box-pl ">
+		<i class="fa fa-magic fn-mr-8"></i>道具使用记录</div>
+	</div>
+    <div class="head-box-content">
+		<div class="wrapper">
+			<div id="draw-history">
+			{if $l1lll1l1l11l11lllllll1lll11111l['opendraw'] == 1}
+			{loop $l1l1111lll1l111l11l1l11llll1111 $ll1l1ll1ll111lllll11l111l1l11ll}
+			时间：{php echo date("Y-m-d H:i", $ll1l1ll1ll111lllll11l111l1l11ll['created_at'])}&nbsp;&nbsp;好友{$ll1l1ll1ll111lllll11l111l1l11ll['uname']}使用了{$ll1l1ll1ll111lllll11l111l1l11ll['data']}分钟双倍投票券<br/>
+			{/loop}
+			{/if}
+			</div>
+		</div>
+    </div>
+</div>
+{/if}
+
+{template 'footer'}
+
+
+<script type="text/javascript" src="{MODULE_URL}template/mobile/js/swiper.jquery.min.js"></script>
+<script type="text/javascript">
+	var _$ = ['#show-container', '.swiper-pagination', ".slide-img", ".show-lists", ".slide-img", ".show-lists", "body", '<audio id="sound-play" controls="controls" preload="auto" style="position:absolute; visibility:hidden;" loop></audio>', "#sound-play", ".sound-off", ".sound-on", "src"];
+	$(function() {
+		var sss4 = new Swiper(_$[0], {
+			pagination: _$[1],
+			paginationClickable: true,
+			onImagesReady: function() {
+				var sss5 = $(_$[2])["eq"](0x0)["height"]();
+				$(_$[3])["height"](sss5)
+			},
+			onSlideChangeStart: function() {
+				var sss5 = $(_$[4])["eq"](sss4["activeIndex"])["height"]();
+				$(_$[5])["height"](sss5)
+			}
+		})
+	});
+	$(_$[6])["append"](_$[7]);
+	var sss0 = $(_$[8]);
+	var sss1 = 0x0;
+	var sss2 = $(_$[9]);
+	var sss3 = $(_$[10]);
+
+	function soundPlay(sss4) {
+		if (sss1 == 0x0) {
+			sss0["attr"](_$[11], sss4);
+			sss0[0x0]["play"]();
+			sss3["hide"]();
+			sss2["show"]();
+			sss1 = 0x1
+		} else if (sss1 == 0x1) {
+			sss0[0x0]["pause"]();
+			sss3["show"]();
+			sss2["hide"]();
+			sss1 = 0x2
+		} else if (sss1 == 0x2) {
+			sss0[0x0]["play"]();
+			sss3["hide"]();
+			sss2["show"]();
+			sss1 = 0x1
+		}
+	}
+	function shareLayer(){
+		$("body").append("<div class='share-layer' onclick='$(this).remove();'><img src='{MODULE_URL}template/mobile/picture/4.png'/></div>");
+	}	
+</script>
+
+<script type="text/javascript" src="{MODULE_URL}template/mobile/js/main.js"></script>
+<script type="text/javascript">
+		$.get("{php echo $this->ll11ll1l1l11l11ll11llll1l1ll11l('vote','xiaof_toupiao','&id='.$l111l111ll1l1111l1l1l11111l1lll[id].'&type=click')}");
+
+        wx.ready(function () {
+            wx.onMenuShareAppMessage({
+                title: '{$llll111ll11l11lll1111111ll1111l}',
+                desc: '{php echo trim($l111l111ll1l1111l1l1l11111l1lll['describe'])}',
+                link: '{php echo $this->ll11ll1l1l11l11ll11llll1l1ll11l('show','xiaof_toupiao','&id='.$l111l111ll1l1111l1l1l11111l1lll['id'].'')}',
+                imgUrl: '{php echo tomedia($l111l111ll1l1111l1l1l11111l1lll['pic'])}',
+                success: function(){
+					var This = $(".share");
+					This.html(parseInt(This.html())+1);
+                    $.get("{php echo $this->ll11ll1l1l11l11ll11llll1l1ll11l('vote','xiaof_toupiao','&id='.$l111l111ll1l1111l1l1l11111l1lll[id].'&type=share')}");
+                },
+                cancel: function(){
+                }
+            });
+            wx.onMenuShareTimeline({
+                title: '{$llll111ll11l11lll1111111ll1111l}',
+                link: '{php echo $this->ll11ll1l1l11l11ll11llll1l1ll11l('show','xiaof_toupiao','&id='.$l111l111ll1l1111l1l1l11111l1lll['id'].'')}',
+                imgUrl: '{php echo tomedia($l111l111ll1l1111l1l1l11111l1lll['pic']);}',
+                success: function () {
+					var This = $(".share");
+					This.html(parseInt(This.html())+1);				
+					$.get("{php echo $this->ll11ll1l1l11l11ll11llll1l1ll11l('vote','xiaof_toupiao','&id='.$l111l111ll1l1111l1l1l11111l1lll[id].'&type=share')}");
+                },
+                cancel: function () {
+                }
+            });
+        });
+</script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<div class="footer  box-bg-color">
+
+	{if $lll11ll11lll11l1l1l1l111ll111l1['openpopularity'] == 1}
+	<div class="head-box title-bg-color" >
+		<div class="wrapper box-pl ">
+		<i class="fa fa-comments-o fn-mr-8"></i>浏览量人气榜</div>
+	</div>
+
+	<div class="head-box-content">
+	<ul class="wrapper popularity clearfix">
+		{php $llll1l1l1l1l1ll1l11lll11ll111l1 = $this->llll1l1l1l1l1ll1l11lll11ll111l1();}
+	    {loop $llll1l1l1l1l1ll1l11lll11ll111l1 $l1l1l1lll11llll1l1ll1l1l1111ll1}
+	    <li>
+	        <a class="pic-a" href="{php echo $this->ll111l11111l11l1l1l1l1llll1lll1('show','xiaof_toupiao','&id='.$l1l1l1lll11llll1l1ll1l1l1111ll1['id'].'');}"><img src="{php echo tomedia($l1l1l1lll11llll1l1ll1l1l1111ll1['pic']);}" alt=""></a>
+	    </li>
+	    {/loop}
+
+	</ul>
+	</div>
+	{/if}
+	
+	
+	{if !empty($lll11ll11lll11l1l1l1l111ll111l1['copyright'])}
+	<div style="text-align:center;font-family: Microsoft YaHei;font-size: 12px;">
+		{$lll11ll11lll11l1l1l1l111ll111l1['copyright']}
+	</div>
+	{/if}
+</div>
+
+<div class="bottom">
+	<?php  $l1llll1l11l11111ll1ll1111111l11 = $this->l111l11l1111ll111111llll11l1lll(); $l11111llll11l111l11111111111l1l = array_slice($l1llll1l11l11111ll1ll1111111l11, 0, 2); $lll1111l1lll1ll1l11lll1llll1l11 = array_slice($l1llll1l11l11111ll1ll1111111l11, 2, 2); ?>
+    <ul>
+		{loop $l11111llll11l111l11111111111l1l $llllllll1l1llll11lll1l1lllll1ll}
+			<li><a href="{$llllllll1l1llll11lll1l1lllll1ll['url']}"><span class="icon"><i class="{$llllllll1l1llll11lll1l1lllll1ll['icon']}"></i></span><span>{$llllllll1l1llll11lll1l1lllll1ll['name']}</span></a></li>
+		{/loop}
+		<li class="search">
+			<span class="icon"><i class="fa fa-search-plus"></i></span><span>搜索</span>
+		</li>
+		{loop $lll1111l1lll1ll1l11lll1llll1l11 $lllll1l11ll11llll1llll111l111l1}
+			<li><a href="{$lllll1l11ll11llll1llll111l111l1['url']}"><span class="icon"><i class="{$lllll1l11ll11llll1llll111l111l1['icon']}"></i></span><span>{$lllll1l11ll11llll1llll111l111l1['name']}</span></a></li>
+		{/loop}		
+    </ul>
+</div>
+<script type="text/javascript">
+	$(function(){
+		var isShow = false;
+		$(".search").click(function(){
+			if(isShow === false){
+				$("#search-box").show();
+				isShow = true;
+			}else{
+				$("#search-box").hide();
+				isShow = false;
+			}
+		});
+	});
+	{if $lll11ll11lll11l1l1l1l111ll111l1['showtimeline'] == 1}
+    wx.ready(function(){
+		wx.hideMenuItems({
+			menuList: ["menuItem:share:timeline"]
+		});
+    });
+	{/if}
+</script>
+<div id="search-box" class="search-box animated slideInUp">
+    <form class="search-form clearfix" method="post" action='{php echo $_W["siteroot"]."app/index.php?c=entry&do=index&m=xiaof_toupiao&i=".$_W['uniacid']."&sid=".$_GPC['sid']."";}'>
+        <input class="search-input" name="key" placeholder="输入编号或姓名" type="text"/><input class="search-button" type="submit" value="搜索"/>
+    </form>	
+</div>
+	
+<div id="dialog" class="popupshade">
+    <div class="popup">
+        <a href="javascript:;" id="popup-close" onclick='$("#dialog").removeClass("is-visible");' class="close">x</a>
+        <div class="popup-container"></div>
+    </div>
+</div>
+
+<div style="display:none;">
+{php echo htmlspecialchars_decode($lll11ll11lll11l1l1l1l111ll111l1['statisticcode']);}
+</div>

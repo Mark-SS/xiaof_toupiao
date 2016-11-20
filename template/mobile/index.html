@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>{$l1lll1l1l11l11lllllll1lll11111l['title']}</title>
+    <meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
+    <link rel="stylesheet" type="text/css" href="{MODULE_URL}template/mobile/css/style.css"/>
+	<link rel="stylesheet" type="text/css" href="{$_W['siteroot']}web/resource/css/font-awesome.min.css"/>
+    <script type="text/javascript" src="{MODULE_URL}template/mobile/js/jquery-2.1.0.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="{MODULE_URL}template/mobile/css/swiper.min.css"/>
+	<script type="text/javascript" src="{MODULE_URL}template/mobile/js/swiper.jquery.min.js"></script>	
+    {php echo register_jssdk(false);}
+	<style>
+		.body-bg-color{ background:{$l1lll1l1l11l11lllllll1lll11111l['bodycolor']}}
+		.button-bg-color{ background:{$l1lll1l1l11l11lllllll1lll11111l['buttoncolor']}}
+		.box-bg-color{ background:{$l1lll1l1l11l11lllllll1lll11111l['boxcolor']}}
+        .title-bg-color{ background:{$l1lll1l1l11l11lllllll1lll11111l['titlecolor']};}
+		body,a{ color:{$l1lll1l1l11l11lllllll1lll11111l['textcolor']}}
+		.item .pic-box i:after{ border-top-color:{$l1lll1l1l11l11lllllll1lll11111l['boxcolor']}}
+		.bottom{ background:{$l1lll1l1l11l11lllllll1lll11111l['bottomcolor']};}
+	</style>
+</head>
+<body class="body-bg-color">
+
+<div class="head">
+    <div class="head-banner">
+		{if is_array($l1lll1l1l11l11lllllll1lll11111l['thumb'])}
+			{if count($l1lll1l1l11l11lllllll1lll11111l['thumb']) <=1}
+				<a href="{php echo trim($l1lll1l1l11l11lllllll1lll11111l['thumblinkarr'][0]);}"><img src="{php echo tomedia(reset($l1lll1l1l11l11lllllll1lll11111l['thumb']))}"></a>
+			{else}
+				<div class="swiper-container">
+				  <div class="swiper-wrapper">
+					{php $llll1llll1ll1llll1l11111l111ll1 = 0;}
+					{loop $l1lll1l1l11l11lllllll1lll11111l['thumb'] $llll11lll1lll1111111lll1ll1l111}
+					<div class="swiper-slide"><a href="{php echo trim($l1lll1l1l11l11lllllll1lll11111l['thumblinkarr'][$llll1llll1ll1llll1l11111l111ll1]);}"><img src="{php echo tomedia($llll11lll1lll1111111lll1ll1l111);}"></a></div>
+					{php $llll1llll1ll1llll1l11111l111ll1++;}
+					{/loop}
+				  </div>
+				</div>				
+				<script> 
+				$(function(){
+					var mySwiper = new Swiper('.swiper-container', {
+						autoplay: 3000
+					})
+				});
+				</script>				
+			{/if}
+		{else}
+        <img src="{php echo tomedia($l1lll1l1l11l11lllllll1lll11111l['thumb'])}">
+		{/if}
+    </div>
+	
+	{if empty($l1lll1l1l11l11lllllll1lll11111l['openwapjoin'])}
+	<a class="join-button button-bg-color" href="{php echo $this->ll11ll1l1l11l11ll11llll1l1ll11l('join');}">我要报名</a>
+	{/if}
+	
+    <div class="head-count">
+		<span>
+			参与选手<br>
+			<b>{$l1l1lllllllllllll1l1111l1ll111l}</b>
+		</span>
+		<span>
+			累计投票<br/>
+			<b>{$llllll11l1lll1l1l11111ll1lllll1}</b>
+		</span>
+		<span>
+			访问量<br/>
+			<b>{$l1l111ll1l11llllll11lllll1ll1l1}</b>
+		</span>
+    </div>
+	<div class="head-info box-bg-color">
+		<div class="head-box title-bg-color" >
+			<div class="wrapper clearfix">
+				<div class="fn-left i-radius fn-mr-8" style="background:{$l1lll1l1l11l11lllllll1lll11111l['textcolor']};">
+					<i style="font-size:29px;margin-top: 4px;color:{$l1lll1l1l11l11lllllll1lll11111l['boxcolor']}" class="fa fa-bell-o"></i>
+				</div>
+				<div class="fn-left">
+				<p>距活动结束还有：</p>
+				<p><span id="shower"></span></p>
+				<script type="text/javascript">
+				{if strtotime($l1lll1l1l11l11lllllll1lll11111l['end'])-time()>=1}
+					var t = {php echo strtotime($l1lll1l1l11l11lllllll1lll11111l['end'])-time();};
+					function showtime(){
+
+						var d = parseInt(t/3600/24);
+						var h = parseInt((t%(3600*24))/3600);
+						var m = parseInt((t%(3600*24))%3600/60);
+						var s = parseInt((t%(3600*24))%60);
+						document.getElementById('shower').innerHTML = d+' 天 '+ h+' 时 '+m+' 分 '+s+' 秒';
+						t = t -1;
+					}
+					showtime();
+					setInterval("showtime()",1000);
+				{else}
+					document.getElementById('shower').innerHTML = '已结束';
+				{/if}
+				</script>
+				</div>
+			</div>
+		</div>
+		<div class="head-box-hr"></div>
+		<div class="head-box box-pl">
+			<div class="wrapper">
+				<a href="{php echo $this->ll11ll1l1l11l11ll11llll1l1ll11l('detail');}"><i class="fa fa-bullhorn fn-mr-8"></i>{if empty($l1lll1l1l11l11lllllll1lll11111l['noticetitle'])}{$l1lll1l1l11l11lllllll1lll11111l['title']}{else}{$l1lll1l1l11l11lllllll1lll11111l['noticetitle']}{/if}<span class="fn-right">&gt;</span></a>
+			</div>
+		</div>
+		<div class="head-box-hr"></div>
+		<div class="head-box box-pl">
+			<div class="wrapper">
+				<i class="fa fa-history fn-mr-8"></i>{$l1lll1l1l11l11lllllll1lll11111l['start']}  至  {$l1lll1l1l11l11lllllll1lll11111l['end']}
+			</div>
+		</div>
+		{if intval($l1lll1l1l11l11lllllll1lll11111l['double']) >= 2}
+		<div class="head-box-hr"></div>
+		<div class="head-box box-pl">
+			<div class="wrapper">
+				<i class="fa fa-clock-o fn-mr-8"></i>{php echo $this->l111l1ll1lll11ll11l11lll1ll11l1($l1lll1l1l11l11lllllll1lll11111l['double']);}倍时间：{php echo date("m-d H:i",strtotime($l1lll1l1l11l11lllllll1lll11111l['doublestart']));}  至  {php echo date("m-d H:i",strtotime($l1lll1l1l11l11lllllll1lll11111l['doubleend']));}
+			</div>
+		</div>	
+		{/if}		
+		<div class="head-box-hr"></div>
+		<div class="head-box box-pl">
+			<div class="wrapper">
+				<a href="{php echo $this->ll11ll1l1l11l11ll11llll1l1ll11l('detail');}"><i class="fa fa-exclamation-circle fn-mr-8"></i>活动介绍<span class="fn-right">&gt;</span></a>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+<div id="dataload" class="index-order clearfix">
+    <span class="button-bg-color nav {if $_GPC['type'] !='top' && $_GPC['type'] !='new'}box-bg-color{/if}" data-type="hot">最热</span>
+    <span class="button-bg-color nav {if $_GPC['type'] =='top'}box-bg-color{/if}" data-type="top">排行</span>
+    <span class="button-bg-color nav {if $_GPC['type'] =='new'}box-bg-color{/if}" data-type="new">最新</span>
+</div>
+
+{if $l1lll1l1l11l11lllllll1lll11111l['opengroups'] >= 1}
+{php $lllll1ll1ll111llll1lll1lll11ll1 = 0;}
+{loop $l1lll1l1l11l11lllllll1lll11111l['groups'] $l1ll1l111111l1l1111l1l1lll1ll1l $ll1lll1ll1l1lll1llllll1111lll11}
+	{if $lllll1ll1ll111llll1lll1lll11ll1 % 5 == 0}
+	<div class="groupload index-group clearfix">	
+	{/if}
+		<span class="button-bg-color nav {if $_GPC['groups'] == $l1ll1l111111l1l1111l1l1lll1ll1l}box-bg-color{/if}" data-type="{$l1ll1l111111l1l1111l1l1lll1ll1l}">{$ll1lll1ll1l1lll1llllll1111lll11['name']}</span>	
+	{if ($lllll1ll1ll111llll1lll1lll11ll1+1) % 5 == 0}
+	</div>
+	{/if}
+	{php $lllll1ll1ll111llll1lll1lll11ll1++;}
+{/loop}
+</div>
+{/if}
+
+<div id="container" class="wrapper">
+    {loop $ll11l11l1111l1ll1llll11111l11ll $l11lll1l1llll11lll1l1l1111l111l}
+    <div class="item">
+        <div class="pic-box box-bg-color">
+            <i class="box-bg-color">{$l11lll1l1llll11lll1l1l1111l111l['uid']}号</i>
+            <a class="pic-a" href="{php echo $this->ll11ll1l1l11l11ll11llll1l1ll11l('show','xiaof_toupiao','&id='.$l11lll1l1llll11lll1l1l1111l111l['id'].'');}">
+				{if $l1lll1l1l11l11lllllll1lll11111l['opensound'] >= 1 && !empty($l11lll1l1llll11lll1l1l1111l111l['sound'])}
+				<div class="show-sound index-show-sound" onclick="soundPlay('{$l11lll1l1llll11lll1l1l1111l111l['sound']}',$(this))">
+					<img class="sound-on" src="{MODULE_URL}template/mobile/picture/ms.png"/>
+					<img class="sound-off" src="{MODULE_URL}template/mobile/picture/mp.png"/>
+				</div>
+				{/if}			
+				<img class="item-thumb" src="{php echo tomedia($l11lll1l1llll11lll1l1l1111l111l['pic']);}" alt=""/>
+				{if !empty($l11lll1l1llll11lll1l1l1111l111l['describe'])}
+				<div class="pic-describe">
+				{$l11lll1l1llll11lll1l1l1111l111l['describe']}
+				</div>
+				{/if}				
+			</a>
+
+            <div class="pic-info">
+                <span class="ballot">{$l11lll1l1llll11lll1l1l1111l111l['name']}<br/><span class="goods">{$l11lll1l1llll11lll1l1l1111l111l['good']}</span>票</span>
+
+                <div class="vote button-bg-color" onclick="vote('{$l11lll1l1llll11lll1l1l1111l111l['id']}', $(this).siblings('.ballot').find('.goods'))">投票</div>
+            </div>
+        </div>
+    </div>
+    {/loop}
+
+</div>
+<div class="pagination box-bg-color" id="pagination">
+    点击加载更多...
+</div>
+
+{template 'footer'}
+
+<script type="text/javascript" src="{MODULE_URL}template/mobile/js/main.js"></script>
+<script type="text/javascript" src="{MODULE_URL}template/mobile/xiaofweui/js/masonry.pkgd.min.js"></script>
+<script type="text/javascript" src="{MODULE_URL}template/mobile/js/imagesloaded.min.js"></script>
+<script type="text/javascript">
+	var _$ = ["body", '<audio id="sound-play" onended="$(\'.sound-on\').show();$(\'.sound-off\').hide();soundStatus=0;" controls="controls" preload="auto" style="position:absolute; visibility:hidden;"></audio>', "#sound-play", ".sound-off", ".sound-on", ".sound-off", "src", ".sound-on", ".sound-off"];
+	var soundStatus = 0x0;
+	$(_$[0])["append"](_$[1]);
+	var sss0 = $(_$[2]);
+
+	function soundPlay(sss1, sss2) {
+		var sss3 = sss2["find"](_$[3]);
+		var sss4 = sss2["find"](_$[4]);
+		$(_$[5])["hide"]();
+		if (soundStatus == 0x0) {
+			sss0["attr"](_$[6], sss1);
+			sss0[0x0]["play"]();
+			sss4["hide"]();
+			sss3["show"]();
+			soundStatus = 0x1
+		} else if (soundStatus == 0x1) {
+			sss0[0x0]["pause"]();
+			$(_$[7])["show"]();
+			$(_$[8])["hide"]();
+			soundStatus = 0x0
+		}
+	}
+	$(function () {
+		$("#container").on('click', '.index-show-sound', function(event){
+            event.preventDefault();
+		});
+        var loadUrl = "{php echo $this->ll11ll1l1l11l11ll11llll1l1ll11l('index');}";
+        var type = "{$_GPC['type']}";
+		var _$ = ['#container', '.item', "#pagination", '正在努力加载中...', "", "#pagination", "#pagination", '没有更多内容了', "#pagination", 'destroy', '.item', 'appended', "#pagination", '点击加载更多...', "#dataload .nav", 'box-bg-color', '.box-bg-color', 'box-bg-color', "data-type", ".groupload .nav", "data-type", 'box-bg-color', "", ".groupload", '.box-bg-color', 'box-bg-color', 'box-bg-color', "data-type", "#pagination"];
+		var xiaof2fc44;
+		var xiaof962cb = $(_$[0]);
+		xiaof962cb["imagesLoaded"](function() {
+			xiaof962cb["masonry"]({
+				itemSelector: _$[1]
+			})
+		});
+		var xiaof312c4 = 0x1;
+		var xiaofa7ab5 = false;
+
+		function xiaofce115(xiaofc194e) {
+			if (xiaofa7ab5 == false) {
+				xiaofa7ab5 = true;
+				setTimeout(function() {
+					xiaofa7ab5 = false
+				}, 0x3e8);
+				xiaof312c4++;
+				$(_$[2])["html"](_$[3]);
+				$["get"](loadUrl, {
+					'page': xiaof312c4,
+					'type': type,
+					'groups': xiaof2fc44
+				}, function(xiaofd25a9) {
+					if (xiaofd25a9 == _$[4]) {
+						$(_$[5])["unbind"]();
+						$(_$[6])["html"](_$[7]);
+						xiaofa7ab5 = false;
+						return
+					};
+					result = $(xiaofd25a9);
+					if (xiaofc194e === true) {
+						$(_$[8])["click"](function() {
+							xiaofce115(false)
+						});
+						xiaof962cb["html"](result);
+						xiaof962cb["masonry"](_$[9]);
+						xiaof962cb["imagesLoaded"](function() {
+							xiaof962cb["masonry"]({
+								itemSelector: _$[10]
+							})
+						})
+					} else {
+						xiaof962cb["append"](result);
+						newElems = result["css"]({
+							opacity: 0x0
+						});
+						newElems["imagesLoaded"](function() {
+							xiaof962cb["masonry"](_$[11], newElems, true);
+							newElems["animate"]({
+								opacity: 0x1
+							})
+						})
+					};
+					$(_$[12])["html"](_$[13]);
+					xiaofa7ab5 = false
+				})
+			}
+		};
+		$(_$[14])["click"](function() {
+			$(this)["addClass"](_$[15])["siblings"](_$[16])["removeClass"](_$[17]);
+			type = $(this)["attr"](_$[18]);
+			xiaof312c4 = 0x0;
+			xiaofce115(true)
+		});
+		$(_$[19])["click"](function() {
+			if (xiaof2fc44 == $(this)["attr"](_$[20])) {
+				$(this)["removeClass"](_$[21]);
+				xiaof2fc44 = _$[22];
+				xiaof312c4 = 0x0;
+				xiaofce115(true);
+				return false
+			};
+			$(_$[23])["find"](_$[24])["removeClass"](_$[25]);
+			$(this)["addClass"](_$[26]);
+			xiaof2fc44 = $(this)["attr"](_$[27]);
+			xiaof312c4 = 0x0;
+			xiaofce115(true)
+		});
+		$(_$[28])["click"](function() {
+			xiaofce115(false)
+		});
+	});
+</script>
+<script type="text/javascript">
+    wx.ready(function () {
+		{if $l1lll1l1l11l11lllllll1lll11111l['audio'] != ""}document.getElementById('media').play();{/if}
+        wx.onMenuShareAppMessage({
+            title: '{$l1lll1l1l11l11lllllll1lll11111l['sharetitle']}',
+            desc: '{php echo trim($l1lll1l1l11l11lllllll1lll11111l['sharecontent']);}',
+            link: '{php echo $this->ll11ll1l1l11l11ll11llll1l1ll11l('index')}',
+            imgUrl: '{php echo tomedia($l1lll1l1l11l11lllllll1lll11111l['sharethumb']);}',
+            success: function () {
+            },
+            cancel: function () {
+            }
+        });
+
+        wx.onMenuShareTimeline({
+            title: '{$l1lll1l1l11l11lllllll1lll11111l['sharetitle']}',
+            link: '{php echo $this->ll11ll1l1l11l11ll11llll1l1ll11l('index')}',
+            imgUrl: '{php echo tomedia($l1lll1l1l11l11lllllll1lll11111l['sharethumb']);}',
+            success: function () {
+            },
+            cancel: function () {
+            }
+        });
+    });
+</script>		
+{if $l1lll1l1l11l11lllllll1lll11111l['audio'] != ""}
+<script type="text/javascript">
+	var audioSrc = "{php echo tomedia($l1lll1l1l11l11lllllll1lll11111l['audio'])}";
+	$(function(){
+		var _$ = ["body", '<div class="video_exist play_yinfu" id="audio_btn" style="display: block;"><div id="yinfu" class="rotate"></div><audio preload="auto" autoplay="autoplay" id="media" src="', '" loop></audio></div>', '#media', "#audio_btn", "off", "play_yinfu", "off", "#yinfu", "rotate", "#media", "off", "play_yinfu", "#yinfu", "rotate", "#media"];
+		$(_$[0])["append"](_$[1] + audioSrc + _$[2]);
+		var xiaof_9bbbb = $(_$[3]);
+		xiaof_9bbbb[0x0]["play"]();
+		$(_$[4])["click"](function() {
+			$(this)["hasClass"](_$[5]) ? ($(this)["addClass"](_$[6])["removeClass"](_$[7]), $(_$[8])["addClass"](_$[9]), $(_$[10])[0x0]["play"]()) : ($(this)["addClass"](_$[11])["removeClass"](_$[12]), $(_$[13])["removeClass"](_$[14]), $(_$[15])[0x0]["pause"]())
+		});
+	});
+</script>
+{/if}
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+<div class="panel panel-default">
+        <div class="panel-heading">关联活动</div>
+        <div class="panel-body">
+
+                <div class="form-group">
+                    <label class="col-xs-12 col-sm-3 col-md-2 control-label">活动期数</label>
+                    <div class="col-sm-6 col-md-8 col-xs-12">
+                        <select name="sid" class="form-control">
+                            {loop $l1111l11l1llll1l11l1lll11l11lll $ll1l1ll1ll111lllll11l111l1l11ll}
+								<option {if $lll1lll111l111l11l1l11111ll11l1 == $ll1l1ll1ll111lllll11l111l1l11ll['id']} selected{/if} value="{$ll1l1ll1ll111lllll11l111l1l11ll['id']}">{$ll1l1ll1ll111lllll11l111l1l11ll['tit']}{if in_array($ll1l1ll1ll111lllll11l111l1l11ll['id'],$ll1l1l111ll1l1111l11ll111l1111l)}（其他公众号分享绑定）{/if}</option>
+							{/loop}
+                        </select>
+                    </div>               
+                </div>
+                <div class="form-group">
+                    <label class="col-xs-12 col-sm-3 col-md-2 control-label">执行动作</label>
+                    <div class="col-sm-6 col-md-8 col-xs-12">
+                        <select name="action" class="form-control">
+							<option {if $l1l1lllll11111ll1l11ll1l11111ll == 0} selected{/if} value="0">图文首页</option>
+							<option {if $l1l1lllll11111ll1l11ll1l11111ll == 1} selected{/if} value="1">报名</option>
+							<option {if $l1l1lllll11111ll1l11ll1l11111ll == 2} selected{/if} value="2">投票</option>
+							<option {if $l1l1lllll11111ll1l11ll1l11111ll == 3} selected{/if} value="3">投票（正则直接投票）</option>
+                        </select>
+						<span class="help-block">
+						正则投票示例：正则关键字设置为“^TP[0-9]*$”（不要”号。 组成结构为：TPuid。TP为自定义标识，uid为选手编号）<br/>
+						例1：“^TP[0-9]*$”<br/>
+						例2：“^投票[0-9]*$” 都可
+						</span>					
+                    </div>               
+                </div>				
+        </div>
+    </div>

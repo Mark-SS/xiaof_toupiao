@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>{$l1lll1l1l11l11lllllll1lll11111l['title']}</title>
+<meta name="format-detection" content="telephone=no, address=no">
+<meta name="apple-mobile-web-app-capable" content="yes" /> 
+<meta name="apple-touch-fullscreen" content="yes"/>
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<link href="{MODULE_URL}template/mobile/xiaofweui/css/xiaofmoblieui.css" rel="stylesheet">
+<link href="{$_W['siteroot']}app/resource/css/font-awesome.min.css" rel="stylesheet">
+<link href="{MODULE_URL}template/mobile/xiaofweui/css/xiaoftoupiao.css" rel="stylesheet">
+{php echo register_jssdk(false);}
+<script src="{$_W['siteroot']}app/resource/js/require.js"></script>
+<style>
+.order .cur,.group .cur,.bottom-tabbar .cur span,.grid-item .pic-box .vote{ color:{$l1lll1l1l11l11lllllll1lll11111l['buttoncolor']};}
+.grid-item .pic-box .vote{ border: 1px solid {$l1lll1l1l11l11lllllll1lll11111l['buttoncolor']};}
+.xiaof-button,.xiaof-button-small{ background:{$l1lll1l1l11l11lllllll1lll11111l['buttoncolor']};}
+</style>
+<script type="text/javascript">
+require.config({
+	baseUrl: '{MODULE_URL}template/mobile/xiaofweui/js',
+	//urlArgs: "v={php echo time();}",
+	paths: {
+		'css': '{$_W['siteroot']}web/resource/js/lib/css.min',
+		'jquery': 'jquery-2.2.3.min',
+		'swiper': 'swiper.jquery.min',
+		'imagesloaded': 'imagesloaded.min',
+		'masonry': 'masonry.pkgd.min',
+		'xiaof': 'xiaofmoblieui',
+		'main': 'main'
+	},
+	shim:{
+		'swiper': {
+			exports: 'swiper',
+			deps: ['jquery', 'css!{MODULE_URL}template/mobile/xiaofweui/css/swiper.min.css']
+		},	
+		'imagesloaded': {
+			exports: 'imagesloaded',
+			deps: ['jquery']
+		},
+		'xiaof': {
+			exports: 'xiaof',
+			deps: ['jquery']
+		}	
+	}
+});
+</script>
+</head>
+<body>
+
+<div class="head">
+    <div class="head-banner">
+		{if is_array($l1lll1l1l11l11lllllll1lll11111l['thumb'])}
+			{if count($l1lll1l1l11l11lllllll1lll11111l['thumb']) <=1}
+				<a href="{php echo trim($l1lll1l1l11l11lllllll1lll11111l['thumblinkarr'][0]);}"><img src="{php echo tomedia(reset($l1lll1l1l11l11lllllll1lll11111l['thumb']))}"></a>
+			{else}
+				<div class="swiper-container">
+				  <div class="swiper-wrapper">
+					{php $llll1llll1ll1llll1l11111l111ll1 = 0;}
+					{loop $l1lll1l1l11l11lllllll1lll11111l['thumb'] $llll11lll1lll1111111lll1ll1l111}
+					<div class="swiper-slide"><a href="{php echo trim($l1lll1l1l11l11lllllll1lll11111l['thumblinkarr'][$llll1llll1ll1llll1l11111l111ll1]);}"><img src="{php echo tomedia($llll11lll1lll1111111lll1ll1l111);}"></a></div>
+					{php $llll1llll1ll1llll1l11111l111ll1++;}
+					{/loop}
+				  </div>
+				</div>				
+				<script> 
+					require(['swiper'], function(Swiper){
+						new Swiper('.swiper-container', {
+							autoplay: 3000
+						})
+					});	
+				</script>				
+			{/if}
+		{else}
+        <img src="{php echo tomedia($l1lll1l1l11l11lllllll1lll11111l['thumb'])}">
+		{/if}
+    </div>
+	
+    <div class="head-count xiaof-box">
+		<span class="xiaof-box-item">
+			参与选手<br>
+			{$l1l1lllllllllllll1l1111l1ll111l}
+		</span>
+		<span class="xiaof-box-item">
+			累计投票<br/>
+			{$llllll11l1lll1l1l11111ll1lllll1}
+		</span>
+		<span class="xiaof-box-item">
+			访问量<br/>
+			{$l1l111ll1l11llllll11lllll1ll1l1}
+		</span>
+    </div>
+	
+	{if empty($l1lll1l1l11l11lllllll1lll11111l['openwapjoin'])}
+	<div class="wrapper">
+		<a class="xiaof-button" href="{php echo $this->ll11ll1l1l11l11ll11llll1l1ll11l('join');}">我要报名</a>
+	</div>
+	{/if}
+
+	
+	<div class="head-info">
+		<div class="head-box" >
+			<div class="wrapper clearfix">
+				<div class="fn-left">
+					<i class="fa fa-bell-o head-box-end"></i>
+				</div>
+				<div class="fn-left">
+				<p>距活动结束还有：</p>
+				<p><span id="shower"></span></p>
+				<script type="text/javascript">
+				{if strtotime($l1lll1l1l11l11lllllll1lll11111l['end'])-time()>=1}
+					var t = {php echo strtotime($l1lll1l1l11l11lllllll1lll11111l['end'])-time();};
+					function showtime(){
+
+						var d = parseInt(t/3600/24);
+						var h = parseInt((t%(3600*24))/3600);
+						var m = parseInt((t%(3600*24))%3600/60);
+						var s = parseInt((t%(3600*24))%60);
+						document.getElementById('shower').innerHTML = d+' 天 '+ h+' 时 '+m+' 分 '+s+' 秒';
+						t = t -1;
+					}
+					showtime();
+					setInterval("showtime()",1000);
+				{else}
+					document.getElementById('shower').innerHTML = '已结束';
+				{/if}
+				</script>
+				</div>
+			</div>
+		</div>
+		<div class="head-box-hr"></div>
+		<div class="head-box">
+			<div class="wrapper">
+				<a href="{php echo $this->ll11ll1l1l11l11ll11llll1l1ll11l('detail');}"><i class="fa fa-bullhorn i-m8"></i>{if empty($l1lll1l1l11l11lllllll1lll11111l['noticetitle'])}{$l1lll1l1l11l11lllllll1lll11111l['title']}{else}{$l1lll1l1l11l11lllllll1lll11111l['noticetitle']}{/if}<span class="fn-right">&gt;</span></a>
+			</div>
+		</div>
+		<div class="head-box-hr"></div>
+		{if intval($l1lll1l1l11l11lllllll1lll11111l['double']) >= 2}
+		<div class="head-box">
+			<div class="wrapper">
+				<i class="fa fa-clock-o i-m8"></i>{php echo $this->l111l1ll1lll11ll11l11lll1ll11l1($l1lll1l1l11l11lllllll1lll11111l['double']);}倍时间：{php echo date("m-d H:i",strtotime($l1lll1l1l11l11lllllll1lll11111l['doublestart']));}  至  {php echo date("m-d H:i",strtotime($l1lll1l1l11l11lllllll1lll11111l['doubleend']));}
+			</div>
+		</div>	
+		<div class="head-box-hr"></div>
+		{/if}		
+	</div>
+</div>
+
+<div class="article-group wrapper">
+	<div class="article-title" >
+		<h3>
+		排行榜
+		</h3>
+	</div>
+    <div class="article-content">
+			<div id="ranking">
+			{php $ll1l11l1111111l1111111ll11l1l11 = 1;}
+			{loop $l1l1l11lllll111ll111ll1111l11ll $ll1l11ll1l1ll1ll1l1lllll11111ll}
+			<div class="xiaof-box ranking-list {if $ll1l11l1111111l1111111ll11l1l11<= 3}ranking-list-hg{elseif $ll1l11l1111111l1111111ll11l1l11<= 10 && $ll1l11l1111111l1111111ll11l1l11>= 3}ranking-list-hg1{/if}">
+				<div class="xiaof-box-item clearfix">
+					<div class="ranking-avatar fn-left">
+						<img src="{php echo tomedia($ll1l11ll1l1ll1ll1l1lllll11111ll['pic']);}"/>
+					</div>
+					<div class="ranking-info fn-left">
+						<p class="ranking-name">{$ll1l11ll1l1ll1ll1l1lllll11111ll['name']}&nbsp;&nbsp;{$ll1l11ll1l1ll1ll1l1lllll11111ll['uid']}号<p/>
+						<p>得票数&nbsp;{$ll1l11ll1l1ll1ll1l1lllll11111ll['good']}</p>
+						<p>{if $ll1l11ll1l1ll1ll1l1lllll11111ll['describe']==''}{$l1lll1l1l11l11lllllll1lll11111l['describe']}{else}{$ll1l11ll1l1ll1ll1l1lllll11111ll['describe']}{/if}</p>
+					</div>
+				</div>
+				<div class="ranking-num">
+				{php echo $ll1l11l1111111l1111111ll11l1l11++;}
+				</div>
+			</div>
+			<div class="head-box-hr"></div>
+			{/loop}
+			</div>
+    </div>
+</div>
+
+
+{template $l1lll1l1l11l11lllllll1lll11111l['template'].'otherfooter'}
+
+</body>
+<script type="text/javascript">
+        wx.ready(function () {
+            wx.onMenuShareAppMessage({
+                title: '{$l1lll1l1l11l11lllllll1lll11111l['sharetitle']}',
+                desc: '{php echo trim($l1lll1l1l11l11lllllll1lll11111l['sharecontent']);}',
+                link: '{php echo $this->ll11ll1l1l11l11ll11llll1l1ll11l('index')}',
+                imgUrl: '{php echo tomedia($l1lll1l1l11l11lllllll1lll11111l['sharethumb'])}',
+                success: function(){},
+                cancel: function(){}
+            });
+
+            wx.onMenuShareTimeline({
+                title: '{$l1lll1l1l11l11lllllll1lll11111l['sharetitle']}',
+                link: '{php echo $this->ll11ll1l1l11l11ll11llll1l1ll11l('index')}',
+                imgUrl: '{php echo tomedia($l1lll1l1l11l11lllllll1lll11111l['sharethumb']);}',
+                success: function () {},
+                cancel: function () {}
+            });
+        });
+</script>
+</html>

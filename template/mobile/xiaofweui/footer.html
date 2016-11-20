@@ -1,0 +1,53 @@
+<div class="footer-article wrapper">
+	<div class="footer-article-title" >
+		<h3>
+		活动简介
+		</h3>
+	</div>
+    <div class="footer-article-content">
+		{php echo htmlspecialchars_decode($l1lll1l1l11l11lllllll1lll11111l['bottom']);}
+    </div>
+	{if !empty($l1lll1l1l11l11lllllll1lll11111l['copyright'])}
+	<div style="text-align:center;font-family: Microsoft YaHei;font-size: 12px;">
+		{$l1lll1l1l11l11lllllll1lll11111l['copyright']}
+	</div>
+	{/if}	
+</div>
+
+<?php  $ll111ll1llllll111lllll1ll11llll = $this->l11llll11ll11111ll11111ll1l11ll(); $l11ll11llll1111ll1l1ll1l1l111ll = array_slice($ll111ll1llllll111lllll1ll11llll, 0, 2); $ll1ll11l11ll11l111ll11l111lll1l = array_slice($ll111ll1llllll111lllll1ll11llll, 2, 2); ?>
+<ul class="xiaof-tabbar bottom-tabbar">
+	{loop $l11ll11llll1111ll1l1ll1l1l111ll $l11l1l1111111l111l111llll111l1l}
+		<li class="xiaof-tabbar-item {if $l11l1l1111111l111l111llll111l1l['do'] == $_GET['do']}cur{/if}"><a href="{$l11l1l1111111l111l111llll111l1l['url']}"><span class="icon"><i class="{$l11l1l1111111l111l111llll111l1l['icon']}"></i></span><span>{$l11l1l1111111l111l111llll111l1l['name']}</span></a></li>
+	{/loop}
+	<li class="search xiaof-tabbar-item">
+		<span class="icon"><i class="fa fa-search-plus"></i></span><span>搜索</span>
+	</li>
+	{loop $ll1ll11l11ll11l111ll11l111lll1l $l1l111ll1l111lllll11l111l111l11}
+		<li class="xiaof-tabbar-item {if $l1l111ll1l111lllll11l111l111l11['do'] == $_GET['do']}cur{/if}"><a href="{$l1l111ll1l111lllll11l111l111l11['url']}"><span class="icon"><i class="{$l1l111ll1l111lllll11l111l111l11['icon']}"></i></span><span>{$l1l111ll1l111lllll11l111l111l11['name']}</span></a></li>
+	{/loop}		
+</ul>
+<script type="text/javascript">
+	require(['jquery', 'xiaof'], function($){
+		var searchHtml = ['<form class="search-form clearfix" method="post" action="{php echo $_W['siteroot'].'app/index.php?c=entry&do=index&m=xiaof_toupiao&i='.$_W['uniacid'].'&sid='.$_GPC['sid'].'';}">',
+		'        <input class="search-input" name="key" placeholder="输入编号或姓名" type="text"/>',
+		'    </form>	'].join("");	
+		$(".search").click(function(){	
+			$.xiaof.confirm('搜索选手', searchHtml, function(status, obj){
+				if(status == 'success'){
+					$(".search-form").submit();
+				}
+			});
+		});
+	});
+	{if $l1lll1l1l11l11lllllll1lll11111l['showtimeline'] == 1}
+    wx.ready(function(){
+		wx.hideMenuItems({
+			menuList: ["menuItem:share:timeline"]
+		});
+    });
+	{/if}
+</script>
+
+<div style="display:none;">
+{php echo htmlspecialchars_decode($l1lll1l1l11l11lllllll1lll11111l['statisticcode']);}
+</div>
